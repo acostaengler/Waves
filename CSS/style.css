@@ -38,11 +38,11 @@ body {
   font-family: 'Playfair Display', serif;
 }
 
-/*.parallax {
+.parallax {
   background: url(../images/waves_para_desktop.jpg) no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
-}*/
+}
 
 p {
   max-width: 800px;
