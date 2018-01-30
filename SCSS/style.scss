@@ -15,7 +15,7 @@
 
 .home-container {
     display: block;
-    @include flex-container;
+//    @include flex-container;
     min-width:100%;
     background-image: $waves-icon ,$start-pic;
     min-height: 80vh;;
@@ -26,7 +26,7 @@
 
 .about-us-container {
     display: inline-block;
-    @include flex-container;
+//    @include flex-container;
     background-color: $primary-color2;
     color: $primary-color;
     min-height: 100vh;
@@ -53,7 +53,7 @@
 
 .employees-container{   
     display: block;
-    @include flex-container;
+//    @include flex-container;
     min-width: 100vw;
     background-color: $primary-color2;
     color: $primary-color;
@@ -73,7 +73,7 @@
     min-height: 100vh;
     min-width: 100vw;
     display: inline-block;
-     @include flex-container;
+//     @include flex-container;
     background-color: $primary-color;
     color: black;
     text-align: center;
@@ -89,7 +89,7 @@
     min-height: 100vh;
     min-width: 100vw;
     display: block;
-    @include flex-container;
+//    @include flex-container;
     text-align: center;
     background-color: $primary-color2;
     @include padding-bot;
@@ -138,22 +138,27 @@
         }
         .usp-container {
             display:flex;
-            background-color: $primary-color2;
+
+            background-color: $primary-color;
             padding: $padding; 
-        justify-content: center;
-        align-items: center;
+            justify-content: center;
+            align-items: center;
 
         }
         
             .usp-picture{
-            flex-grow: 1;
+            
             min-width: 30%;
+            float: left;
+            padding:1rem;
+            @include clearfix;
+
 
         }
             .usp-text{
-            background-color: $primary-color;
-            flex-grow: 2;
-            padding: $padding;
+            background-color: $primary-color2;
+           
+            padding: 3rem;
             color:black;
             min-width: 60%
         }
@@ -164,8 +169,8 @@
 
 .contact-container {
     display: inline-block;
-    display: flex;
-    flex-wrap:wrap;
+//    display: flex;
+//    flex-wrap:wrap;
     justify-content:center;
     min-width: 100%;
     min-height: 90vh;
@@ -182,7 +187,7 @@
         display: none;
     }
     input.contact-small, textarea.contact-small {
-        display: flex;
+ //       display: flex;
         display: block;
     }
     textarea {
@@ -213,8 +218,8 @@ footer{
     min-height: 10vh;
     min-width: 100vw;
     display:inline-block;
-    display: flex;
-    flex-wrap: wrap;
+//    display: flex;
+//    flex-wrap: wrap;
     justify-content: space-around;
     background-color: $primary-color2;
     text-transform: uppercase;
@@ -313,30 +318,69 @@ h1,h2,h3{
 .home-container{
     min-height: 100vh;
 }
-    .assignment-backgrund{
+.assignment-backgrund{
 
         display: flex;
-        flex-direction: row;
+       flex-direction: row;
+
         padding: 0;
             header {
                  width: 100%;
             }
-            .assignment, .assignment-1{
+            .assignment {
             width: 45%;
+            float: left;
+            padding-top: 20vh;
+                .assignment-picture{
+                    padding: $padding;
+                }
+            }
+            .assignment-1 {
+            width: 45%;
+            float: right; 
+            padding-top: 20vh;
                 .assignment-picture{
                     padding: $padding;
                 }
         }
     }
+        
+
+
     .desktop-usp{   
         display: none;
     } 
  
     .services-container{
-        flex-wrap: wrap;
+        display: flex;
+        flex-wrap:wrap;
+        
             header{
+            flex:3;
             width: 100%
             }
+        .usp11{
+        @include usp-float;
+        background-color:$primary-color2;
+        margin: 0;
+        flex:1;
+        
+        
+        }
+        .usp22{
+        @include usp-float;
+        background-color:$primary-color2;
+        margin: 0;
+       flex:1;
+        
+        }
+        .usp33{
+        @include usp-float;
+        background-color:$primary-color2; 
+        margin: 0;
+        flex:1;
+            
+        }
         .service{
             width: 30%;
             padding: 0;
@@ -347,7 +391,7 @@ h1,h2,h3{
 
   }
   .topnav a.icon {
-    display: flex;
+ //   display: flex;
     position: fixed;
     right: 0;
     top: 0;
@@ -362,7 +406,7 @@ h1,h2,h3{
     flex-direction:column;
 
     a:not(:last-child){
-    display: flex;
+ //   display: flex;
     padding: 14px 16px;
     text-shadow: none;
     width: 100%;
@@ -404,27 +448,47 @@ h1,h2,h3{
     .assignment-container{
         background: none;
         padding:0;
+        color:white;
 
             .assignment-backgrund{
-                background-color: $primary-color;
+                
                 color:white;
                 width:100%;
+
                 display:flex;
                 flex-wrap: wrap;
                 justify-content: space-around;
-                align-items: center;  
+                  align-items: center;  
                 margin: 0;
                 padding: 0;
                     header{
                         width:100%;
+                        height: 20vh;
                     } 
-             
+                div{
+                    padding: 1rem;
+                }
             }  
 
         
-        .assignment, .assignment-1{
+        .assignment{
+            float: right;
+            @include clearfix;
+            width: 40%;
+            padding: 2rem;
+            margin: 30vh 2rem;
+            background-color:$primary-color2;
+            border: $padding;
+            .assignment-picture{
+                padding:0;
+            }
+        } 
+        .assignment-1{
+            float: left;
+            @include clearfix;
             width: 40%;
             padding: 0;
+            margin: 30vh 2rem;
             background-color:$primary-color2;
             border: $padding;
             .assignment-picture{
@@ -437,22 +501,48 @@ h1,h2,h3{
         background: none;
         display:flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+       justify-content: space-around;
         align-items: center; 
             header{
                 width:100%;
+                height: 40vh;
+                flex:4;
             }
-            .service{
-
-                width: 30%;
-                padding: 0;
-                background-color:$primary-color2;
-                min-height: 40vh;
-              
-            }
+        .usp11{
+        @include usp-float;
+        background-color:$primary-color2;
+        margin: 0;
+        padding: 1rem;
+        width: 33%;
+        flex:1;
+        align-self:flex-end;
+        }
+        .usp22{
+        @include usp-float;
+        background-color:$primary-color2;
+        margin: 0;
+        width: 33%;
+        padding: 1rem;
+        flex:1;
+        align-self:flex-end;
+        }
+        .usp33{
+        @include usp-float;
+        background-color:$primary-color2; 
+        margin: 0;
+        width: 33%; 
+        padding: 1rem; 
+        flex:1;   
+        align-self:flex-end; 
+        }          
+   
         }
         .contact-container {
         background-color: transparent;
+        display: flex;
+        .contact-header{
+            color:white;
+        }
         .contact-text {
             display: flex;
             justify-content: center;

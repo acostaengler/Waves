@@ -112,6 +112,13 @@ text-shadow: 1px 1px $start-shadow;
         transition: all 400ms;
     }
         
-} 
-
+    } 
+}
+@mixin usp-float{
+    float:left;
+    width: 33%;
+    overflow: auto;
+    padding: $padding;
+    padding-top: 20vh;
+    @include clearfix;
 }
