@@ -15,7 +15,7 @@
 
 .home-container {
     display: block;
-//    @include flex-container;
+    @include flex-container;
     min-width:100%;
     background-image: $waves-icon ,$start-pic;
     min-height: 80vh;;
@@ -26,7 +26,7 @@
 
 .about-us-container {
     display: inline-block;
-//    @include flex-container;
+    @include flex-container;
     background-color: $primary-color2;
     color: $primary-color;
     min-height: 100vh;
@@ -53,7 +53,7 @@
 
 .employees-container{   
     display: block;
-//    @include flex-container;
+    @include flex-container;
     min-width: 100vw;
     background-color: $primary-color2;
     color: $primary-color;
@@ -73,7 +73,7 @@
     min-height: 100vh;
     min-width: 100vw;
     display: inline-block;
-//     @include flex-container;
+     @include flex-container;
     background-color: $primary-color;
     color: black;
     text-align: center;
@@ -89,7 +89,7 @@
     min-height: 100vh;
     min-width: 100vw;
     display: block;
-//    @include flex-container;
+    @include flex-container;
     text-align: center;
     background-color: $primary-color2;
     @include padding-bot;
@@ -169,8 +169,8 @@
 
 .contact-container {
     display: inline-block;
-//    display: flex;
-//    flex-wrap:wrap;
+    display: flex;
+    flex-wrap:wrap;
     justify-content:center;
     min-width: 100%;
     min-height: 90vh;
@@ -187,7 +187,7 @@
         display: none;
     }
     input.contact-small, textarea.contact-small {
- //       display: flex;
+        display: flex;
         display: block;
     }
     textarea {
@@ -218,22 +218,25 @@ footer{
     min-height: 10vh;
     min-width: 100vw;
     display:inline-block;
-//    display: flex;
-//    flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     background-color: $primary-color2;
     text-transform: uppercase;
+
     }
 
     .foot-contact{
        @include footer-shared-left;
         @include footer-shared-flex;
         min-width: 33.33%;
+        @include clearfix;
     }
     
     .foot-adress{
         @include footer-shared-flex;
         min-width: 33.33%;
+        @include clearfix;
     }
     
     .foot-follow{
@@ -272,7 +275,7 @@ footer{
   }
   .topnav a.icon {
     display: block;
-    // display: flex;
+    display: flex;
     position: fixed;
     right: 0;
     top: 0;
@@ -284,11 +287,11 @@ footer{
     .topnav.responsive { 
     position: fixed;
     background-color: $primary-color;
-    // flex-direction:column;
+    flex-direction:column;
 
     a:not(:last-child){
     display: block;
-    // display: flex;
+    display: flex;
     padding: 0.8rem 1rem;
     text-shadow: none;
     width: 100%;
@@ -391,7 +394,7 @@ h1,h2,h3{
 
   }
   .topnav a.icon {
- //   display: flex;
+    display: flex;
     position: fixed;
     right: 0;
     top: 0;
@@ -406,7 +409,7 @@ h1,h2,h3{
     flex-direction:column;
 
     a:not(:last-child){
- //   display: flex;
+    display: flex;
     padding: 14px 16px;
     text-shadow: none;
     width: 100%;
@@ -419,6 +422,26 @@ h1,h2,h3{
     }
   }
   }
+      .foot-contact{
+       @include footer-shared-right;
+        @include footer-shared-flex;
+        width: 30%;
+        @include clearfix;
+    }
+    
+    .foot-adress{
+       @include  footer-shared-right;
+        @include footer-shared-flex;
+        width: 30%;
+        @include clearfix;
+    }
+    
+    .foot-follow{
+        @include footer-shared-right;
+        @include footer-shared-flex;
+        width: 30%;
+        @include clearfix;
+    }
  }   
 
 @media #{$width-desktop}{
@@ -458,7 +481,7 @@ h1,h2,h3{
                 display:flex;
                 flex-wrap: wrap;
                 justify-content: space-around;
-                  align-items: center;  
+                align-items: center;  
                 margin: 0;
                 padding: 0;
                     header{
@@ -537,6 +560,9 @@ h1,h2,h3{
         }          
    
         }
+        .usp-picture{
+        background-color:$primary-color2;    
+        }
         .contact-container {
         background-color: transparent;
         display: flex;
@@ -544,7 +570,7 @@ h1,h2,h3{
             color:white;
         }
         .contact-text {
-            display: flex;
+              display: flex;
             justify-content: center;
             width: 100%;
         }
@@ -567,9 +593,27 @@ h1,h2,h3{
     textarea {
         max-height: 100px;
     }
-
+    .foot-contact{
+       @include footer-shared-right;
+        @include footer-shared-flex;
+        width: 30%;
+        @include clearfix;
+    }
+    
+    .foot-adress{
+       @include  footer-shared-right;
+        @include footer-shared-flex;
+        width: 30%;
+        @include clearfix;
+    }
+    
+    .foot-follow{
+        @include footer-shared-right;
+        @include footer-shared-flex;
+        width: 30%;
+        @include clearfix;
 }
-
+}
 
 // @import 'variabel';
 // @import 'reset';
