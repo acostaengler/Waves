@@ -15,7 +15,7 @@
 
 .home-container {
     display: block;
-    @include flex-container;
+//    @include flex-container;
     min-width:100%;
     background-image: $waves-icon ,$start-pic;
     min-height: 80vh;;
@@ -26,7 +26,7 @@
 
 .about-us-container {
     display: inline-block;
-    @include flex-container;
+//    @include flex-container;
     background-color: $primary-color2;
     color: $primary-color;
     min-height: 100vh;
@@ -53,7 +53,7 @@
 
 .employees-container{   
     display: block;
-    @include flex-container;
+//    @include flex-container;
     min-width: 100vw;
     background-color: $primary-color2;
     color: $primary-color;
@@ -73,7 +73,7 @@
     min-height: 100vh;
     min-width: 100vw;
     display: inline-block;
-     @include flex-container;
+//     @include flex-container;
     background-color: $primary-color;
     color: black;
     text-align: center;
@@ -89,7 +89,7 @@
     min-height: 100vh;
     min-width: 100vw;
     display: block;
-    @include flex-container;
+//    @include flex-container;
     text-align: center;
     background-color: $primary-color2;
     @include padding-bot;
@@ -169,8 +169,8 @@
 
 .contact-container {
     display: inline-block;
-    display: flex;
-    flex-wrap:wrap;
+//    display: flex;
+//    flex-wrap:wrap;
     justify-content:center;
     min-width: 100%;
     min-height: 90vh;
@@ -187,7 +187,7 @@
         display: none;
     }
     input.contact-small, textarea.contact-small {
-        display: flex;
+ //       display: flex;
         display: block;
     }
     textarea {
@@ -218,8 +218,8 @@ footer{
     min-height: 10vh;
     min-width: 100vw;
     display:inline-block;
-    display: flex;
-    flex-wrap: wrap;
+//    display: flex;
+//    flex-wrap: wrap;
     justify-content: space-around;
     background-color: $primary-color2;
     text-transform: uppercase;
@@ -321,7 +321,7 @@ h1,h2,h3{
 .assignment-backgrund{
 
         display: flex;
-        flex-direction: row;
+       flex-direction: row;
 
         padding: 0;
             header {
@@ -353,9 +353,10 @@ h1,h2,h3{
  
     .services-container{
         display: flex;
+        flex-wrap:wrap;
         
             header{
-            flex:4;
+            flex:3;
             width: 100%
             }
         .usp11{
@@ -363,7 +364,7 @@ h1,h2,h3{
         background-color:$primary-color2;
         margin: 0;
         flex:1;
-        padding: 1rem;
+        
         
         }
         .usp22{
@@ -371,14 +372,14 @@ h1,h2,h3{
         background-color:$primary-color2;
         margin: 0;
        flex:1;
-        padding: 1rem;
+        
         }
         .usp33{
         @include usp-float;
         background-color:$primary-color2; 
         margin: 0;
         flex:1;
-        padding: 1rem;     
+            
         }
         .service{
             width: 30%;
@@ -390,7 +391,7 @@ h1,h2,h3{
 
   }
   .topnav a.icon {
-    display: flex;
+ //   display: flex;
     position: fixed;
     right: 0;
     top: 0;
@@ -405,7 +406,7 @@ h1,h2,h3{
     flex-direction:column;
 
     a:not(:last-child){
-    display: flex;
+ //   display: flex;
     padding: 14px 16px;
     text-shadow: none;
     width: 100%;
