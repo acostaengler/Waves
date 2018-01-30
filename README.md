@@ -1,4 +1,4 @@
-# Waves# Waves
+# Waves
 Grupp 7
 Robert Reneström
 Häni Abu Zeid
