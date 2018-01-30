@@ -8,7 +8,7 @@
 
     div {
         margin: .625rem;
-       
+        
     }
 
 }
@@ -43,9 +43,9 @@
       clear: both;
     }
   }
-@mixin footer-shared-block{
+@mixin footer-shared-left{
     float: left;
-    width: 33.33%;
+    width: 45%;
     min-height: 100%;
     color: $nav-color;
     text-decoration: none;
@@ -53,6 +53,44 @@
     font-size:0.5rem;
     letter-spacing: 5px;
     text-shadow: 1px 1px $start-shadow;
+        a{
+            text-decoration: none;
+            font-size:$fontsize-mobile;
+            color: $logo-color;
+        &:visited{
+            color: $logo-color;
+        }
+        &:hover{
+            font-size: 1rem;
+            transition: all 400ms;
+        }
+        
+    } 
+}
+
+@mixin footer-shared-right{
+    float: right;
+    width: 45%;
+    min-height: 100%;
+    color: $nav-color;
+    text-decoration: none;
+    text-align: center;
+    font-size:0.5rem;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px $start-shadow;
+        a{
+            text-decoration: none;
+            font-size:$fontsize-mobile;
+            color: $logo-color;
+        &:visited{
+            color: $logo-color;
+        }
+        &:hover{
+            font-size: 1rem;
+            transition: all 400ms;
+        }
+        
+    } 
 }
 
 @mixin footer-shared-flex{
