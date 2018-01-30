@@ -24,8 +24,6 @@
     background-size: auto, cover;
 }
 
-
- 
 .about-us-container {
     display: inline-block;
     @include flex-container;
@@ -52,6 +50,7 @@
     }
 
 }
+
 .employees-container{   
     display: block;
     @include flex-container;
@@ -59,24 +58,22 @@
     background-color: $primary-color2;
     color: $primary-color;
     padding: 1rem;
-
-   
-    div {
-        background-color: $primary-color;
-        color: black;
-        float: left;
-        width: 30%;
-       @include clearfix;
-       margin: 3px;
-       
+        div {
+            background-color: $primary-color;
+            color: black;
+            float: left;
+            width: 30%;
+            @include clearfix;
+            margin: 3px;
     }
 
 }
+
 .assignment-container {
     min-height: 100vh;
     min-width: 100vw;
-     @include flex-container;
     display: inline-block;
+     @include flex-container;
     background-color: $primary-color;
     color: black;
     text-align: center;
@@ -84,17 +81,15 @@
             width: 70%;
             margin: 1rem auto;
             text-align: justify;
-            padding: 1rem;
-            
+            padding: 1rem; 
         }
-    
     }
 
 .services-container {
-    @include flex-container;
     min-height: 100vh;
     min-width: 100vw;
     display: block;
+    @include flex-container;
     text-align: center;
     background-color: $primary-color2;
     @include padding-bot;
@@ -173,12 +168,12 @@
 }
 
 .contact-container {
+    display: inline-block;
     display: flex;
     flex-wrap:wrap;
     justify-content:center;
     min-width: 100%;
     min-height: 90vh;
-    display: inline-block;
     background-color: $primary-color;
     padding: 1rem;
     .contact-text {
@@ -219,6 +214,35 @@ input[type=text], textarea {
     background-color: $primary-color;
 }
 
+footer{
+    min-height: 10vh;
+    min-width: 100vw;
+    display:inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: $primary-color2;
+    text-transform: uppercase;
+    }
+
+    .foot-contact{
+       @include footer-shared-left;
+        @include footer-shared-flex;
+        min-width: 33.33%;
+    }
+    
+    .foot-adress{
+        @include footer-shared-flex;
+        min-width: 33.33%;
+    }
+    
+    .foot-follow{
+        @include footer-shared-right;
+        @include footer-shared-flex;
+        min-width: 33.33%;
+        @include clearfix;
+    }
+
 
 @media #{$width-mobile}{
 
@@ -247,11 +271,12 @@ footer{
       display: none;
   }
   .topnav a.icon {
-    display: flex;
+    display: block;
+    // display: flex;
     position: fixed;
     right: 0;
     top: 0;
-    padding: 14px 16px;
+    padding: 0.8rem 1rem;
     text-shadow: none;
     color: black;  
   }
@@ -259,11 +284,12 @@ footer{
     .topnav.responsive { 
     position: fixed;
     background-color: $primary-color;
-    flex-direction:column;
+    // flex-direction:column;
 
     a:not(:last-child){
-    display: flex;
-    padding: 14px 16px;
+    display: block;
+    // display: flex;
+    padding: 0.8rem 1rem;
     text-shadow: none;
     width: 100%;
     font-size: 1rem;
@@ -542,36 +568,7 @@ h1,h2,h3{
     }
 
 }
-footer{
-    min-height: 10vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: $primary-color2;
-    text-transform: uppercase;
-    }
-    
 
-    .foot-contact{
-    @include footer-shared-flex;
-    min-width: 33.33%;
-
-
- 
-}
-
-.foot-adress{
-    @include footer-shared-flex;
-    min-width: 33.33%;
-
-}
-
-.foot-follow{
-    @include footer-shared-flex;
-    min-width: 33.33%;
-
-
-}
 
 // @import 'variabel';
 // @import 'reset';
