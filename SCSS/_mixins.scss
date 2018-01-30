@@ -8,7 +8,7 @@
 
     div {
         margin: .625rem;
-        padding: 5px;
+        
     }
 
 }
@@ -36,10 +36,16 @@
     display:block;
     width: 100%;
 }
-
-@mixin footer-shared-block{
+@mixin clearfix{
+    &:after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+@mixin footer-shared-left{
     float: left;
-    width: 33.33%;
+    width: 45%;
     min-height: 100%;
     color: $nav-color;
     text-decoration: none;
@@ -47,6 +53,44 @@
     font-size:0.5rem;
     letter-spacing: 5px;
     text-shadow: 1px 1px $start-shadow;
+        a{
+            text-decoration: none;
+            font-size:$fontsize-mobile;
+            color: $logo-color;
+        &:visited{
+            color: $logo-color;
+        }
+        &:hover{
+            font-size: 1rem;
+            transition: all 400ms;
+        }
+        
+    } 
+}
+
+@mixin footer-shared-right{
+    float: right;
+    width: 45%;
+    min-height: 100%;
+    color: $nav-color;
+    text-decoration: none;
+    text-align: center;
+    font-size:0.5rem;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px $start-shadow;
+        a{
+            text-decoration: none;
+            font-size:$fontsize-mobile;
+            color: $logo-color;
+        &:visited{
+            color: $logo-color;
+        }
+        &:hover{
+            font-size: 1rem;
+            transition: all 400ms;
+        }
+        
+    } 
 }
 
 @mixin footer-shared-flex{
@@ -68,6 +112,13 @@ text-shadow: 1px 1px $start-shadow;
         transition: all 400ms;
     }
         
-} 
-
+    } 
+}
+@mixin usp-float{
+    float:left;
+    width: 33%;
+    overflow: auto;
+    padding: $padding;
+    padding-top: 20vh;
+    @include clearfix;
 }
