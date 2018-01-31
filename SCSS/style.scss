@@ -129,6 +129,7 @@
         color:white;
         background: none;
         display:flex;
+        @include prefix-flex;
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
@@ -138,7 +139,7 @@
         }
         .usp-container {
             display:flex;
-
+            @include prefix-flex;
             background-color: $primary-color;
             padding: $padding; 
             justify-content: center;
@@ -147,7 +148,6 @@
         }
         
             .usp-picture{
-            
             min-width: 30%;
             float: left;
             padding:1rem;
@@ -157,7 +157,6 @@
         }
             .usp-text{
             background-color: $primary-color2;
-           
             padding: 3rem;
             color:black;
             min-width: 60%
@@ -170,6 +169,7 @@
 .contact-container {
     display: inline-block;
     display: flex;
+    @include prefix-flex;
     flex-wrap:wrap;
     justify-content:center;
     min-width: 100%;
@@ -188,6 +188,7 @@
     }
     input.contact-small, textarea.contact-small {
         display: flex;
+        @include prefix-flex;
         display: block;
     }
     textarea {
@@ -219,6 +220,7 @@ footer{
     min-width: 100vw;
     display:inline-block;
     display: flex;
+    @include prefix-flex;
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: $primary-color2;
@@ -276,6 +278,7 @@ footer{
   .topnav a.icon {
     display: block;
     display: flex;
+    @include prefix-flex;
     position: fixed;
     right: 0;
     top: 0;
@@ -292,6 +295,7 @@ footer{
     a:not(:last-child){
     display: block;
     display: flex;
+    @include prefix-flex;
     padding: 0.8rem 1rem;
     text-shadow: none;
     width: 100%;
@@ -324,7 +328,8 @@ h1,h2,h3{
 .assignment-backgrund{
 
         display: flex;
-       flex-direction: row;
+        @include prefix-flex;
+        flex-direction: row;
 
         padding: 0;
             header {
@@ -356,6 +361,7 @@ h1,h2,h3{
  
     .services-container{
         display: flex;
+        @include prefix-flex;
         flex-wrap:wrap;
         
             header{
@@ -395,6 +401,7 @@ h1,h2,h3{
   }
   .topnav a.icon {
     display: flex;
+    @include prefix-flex;
     position: fixed;
     right: 0;
     top: 0;
@@ -423,7 +430,7 @@ h1,h2,h3{
   }
   }
       .foot-contact{
-       @include footer-shared-right;
+        @include footer-shared-right;
         @include footer-shared-flex;
         width: 30%;
         @include clearfix;
@@ -477,8 +484,8 @@ h1,h2,h3{
                 
                 color:white;
                 width:100%;
-
                 display:flex;
+                @include prefix-flex;
                 flex-wrap: wrap;
                 justify-content: space-around;
                 align-items: center;  
@@ -523,8 +530,9 @@ h1,h2,h3{
       
         background: none;
         display:flex;
+        @include prefix-flex;
         flex-wrap: wrap;
-       justify-content: space-around;
+        justify-content: space-around;
         align-items: center; 
             header{
                 width:100%;
@@ -566,11 +574,13 @@ h1,h2,h3{
         .contact-container {
         background-color: transparent;
         display: flex;
+        @include prefix-flex;
         .contact-header{
             color:white;
         }
         .contact-text {
-              display: flex;
+            display: flex;
+            @include prefix-flex;
             justify-content: center;
             width: 100%;
         }
@@ -579,6 +589,7 @@ h1,h2,h3{
         }
         input.contact-large, textarea.contact-large {
             display: flex;
+            @include prefix-flex;
         }
     }
     input[type=text], textarea {

@@ -1,5 +1,8 @@
 @mixin flex-container {
     display: flex;
+    display: -webkit-box;  
+    display: -ms-flexbox;  
+    display: -webkit-flex; 
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
@@ -15,6 +18,9 @@
 
 @mixin flex-column{
     display: flex;
+    display: -webkit-box;  
+    display: -ms-flexbox;  
+    display: -webkit-flex; 
     flex-flow: column wrap;
 }
 
@@ -121,4 +127,11 @@ text-shadow: 1px 1px $start-shadow;
     padding: $padding;
     padding-top: 20vh;
     @include clearfix;
+}
+
+@mixin prefix-flex{
+    display: -webkit-box;  
+    display: -ms-flexbox;  
+    display: -webkit-flex; 
+    display: flex;
 }
