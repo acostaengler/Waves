@@ -1,28 +1,25 @@
-.slogan-cont {
+.slogan-cont{
     min-height: 20vh;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
     align-items: flex-start;
+
+
 }
-.slogan-box {
+
+.slogan-box{
     color: $nav-color;
     text-transform: uppercase;
-    letter-spacing: 0.8rem;
+    letter-spacing: 0.8rem;;
     text-align: center;
     text-shadow: 2px 1px $start-shadow;
     font-size: 1rem;
     font-weight: bold;
 }
-.span-strong {
+
+.span-strong{
     color: $logo-color;
     font-size: 1.5rem;
 }

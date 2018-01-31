@@ -1,13 +1,11 @@
 input[type=submit] {
-	background-color: $primary-color2;
-	padding: 10px 60px;
-	border: none;
-}
-input[type=submit]:hover {
-	background-color: saturate( $primary-color2, 20% );
+    background-color: $primary-color2;
+    padding: 10px 60px;
+    border: none;
 }
 
-.button{
-	text-align: center;
-    padding: 2rem 0;
+input[type=submit]:hover {
+   background-color: saturate( $primary-color2, 20% );
 }
+
+
