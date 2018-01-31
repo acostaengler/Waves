@@ -13,20 +13,23 @@
 @import 'aside';
 @import 'mixins';
 
+// HEM
+
 .home-container {
     display: block;
-//    @include flex-container;
-    min-width:100%;
+    @include flex-container;
+    min-width: 100%;
     background-image: $waves-icon ,$start-pic;
-    min-height: 80vh;;
+    min-height: 80vh;
     background-repeat: no-repeat,no-repeat;
     background-position: 50% 50%;
     background-size: auto, cover;
 }
 
+// OM OSS
 .about-us-container {
     display: inline-block;
-//    @include flex-container;
+    @include flex-container;
     background-color: $primary-color2;
     color: $primary-color;
     min-height: 100vh;
@@ -35,61 +38,62 @@
     h1{
         float: left;
         min-width: 100%;
-        @include clearfix;
-        
+        @include clearfix; 
     }
     a{
         color: black;
-        &:hover{
-            color: $primary-color2;
+    &:hover{
+        color: $primary-color2;
         }
     }
     .about-box{
         padding: 0 2rem;
         text-align: justify;
     }
-
 }
 
 .employees-container{   
     display: block;
-//    @include flex-container;
+    @include flex-container;
     min-width: 100vw;
     background-color: $primary-color2;
     color: $primary-color;
     padding: 1rem;
-        div {
-            background-color: $primary-color;
-            color: black;
-            float: left;
-            width: 30%;
-            @include clearfix;
-            margin: 3px;
+    div {
+        background-color: $primary-color;
+        color: black;
+        float: left;
+        width: 30%;
+        @include clearfix;
+        margin: 3px;
     }
-
 }
 
+// UPPDRAG
 .assignment-container {
     min-height: 100vh;
     min-width: 100vw;
     display: inline-block;
-//     @include flex-container;
+    @include flex-container;
     background-color: $primary-color;
     color: black;
     text-align: center;
-        .assignment, .assignment-1{
-            width: 70%;
-            margin: 1rem auto;
-            text-align: justify;
-            padding: 1rem; 
-        }
+    .assignment, .assignment-1{
+        width: 70%;
+        margin: 1rem auto;
+        padding: 1rem; 
     }
+    p{
+        text-align: justify;
+    }
+}
 
+// TJÄNSTER
 .services-container {
     min-height: 100vh;
     min-width: 100vw;
     display: block;
-//    @include flex-container;
+    @include flex-container;
     text-align: center;
     background-color: $primary-color2;
     @include padding-bot;
@@ -100,77 +104,79 @@
         color:white;
         @include clearfix;
     }
-   
-        a:link {
-            text-decoration: none;
-            color:white
-        }
-        a:visited {
-            text-decoration: none;
-            color:white
-        }
-        a:hover {
-            text-decoration: none;
-            color:white
-        }
-        a:active {
-            text-decoration: none;
-            color:white
-        }    
-        // .picture-services{
-           
-        // }
-    
+    a:link {
+        text-decoration: none;
+        color:white
+    }
+    a:visited {
+        text-decoration: none;
+        color:white
+    }
+    a:hover {
+        text-decoration: none;
+        color:white
+    }
+    a:active {
+        text-decoration: none;
+        color:white
+    }      
 }
+
 .desktop-usp{
-@include flex-container;
+    @include flex-container;
     .uspar{
         min-height: 100vh;
         color:white;
         background: none;
+        @include prefix-flex;
         display:flex;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         .header{
             width: 100%;
             min-height: 40vh;
         }
         .usp-container {
+            @include prefix-flex;
             display:flex;
-
             background-color: $primary-color;
             padding: $padding; 
+            -webkit-box-pack: center; 
+            -ms-flex-pack: center; 
             justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
-
         }
-        
-            .usp-picture{
-            
+        .usp-picture{
             min-width: 30%;
             float: left;
             padding:1rem;
             @include clearfix;
-
-
         }
-            .usp-text{
+        .usp-text{
             background-color: $primary-color2;
-           
             padding: 3rem;
             color:black;
             min-width: 60%
         }
     }
-
-
 }
 
+// KONTAKT
 .contact-container {
     display: inline-block;
-//    display: flex;
-//    flex-wrap:wrap;
+    @include prefix-flex;
+    display: flex;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    -webkit-box-pack:center;
+    -ms-flex-pack:center;
     justify-content:center;
     min-width: 100%;
     min-height: 90vh;
@@ -179,15 +185,16 @@
     .contact-text {
         display: none;
     }
-    header {
-        min-width: 100%;
+    .contact-head{
+    text-align: center; 
+    min-width: 100%;
     }
-
     input.contact-large, textarea.contact-large {
         display: none;
     }
     input.contact-small, textarea.contact-small {
- //       display: flex;
+        @include prefix-flex;
+        display: flex;
         display: block;
     }
     textarea {
@@ -195,18 +202,11 @@
     }
     form{
         float: right;
-        min-width: 70%;
         padding-top: 3rem;
         @include clearfix;
     }
-    .button{
-	    align-self: center;
-        padding: 2rem 0;
-    }
 }
-.contact-head{
-    text-align: center; 
-}
+
 input[type=text], textarea {
     padding: 0.5rem 5rem;
     border: none;
@@ -214,892 +214,413 @@ input[type=text], textarea {
     background-color: $primary-color;
 }
 
-footer{
-    min-height: 10vh;
-    min-width: 100vw;
-    display:inline-block;
-//    display: flex;
-//    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: $primary-color2;
-    text-transform: uppercase;
-    }
-
-    .foot-contact{
-       @include footer-shared-left;
-        @include footer-shared-flex;
-        min-width: 33.33%;
-    }
-    
-    .foot-adress{
-        @include footer-shared-flex;
-        min-width: 33.33%;
-    }
-    
-    .foot-follow{
-        @include footer-shared-right;
-        @include footer-shared-flex;
-        min-width: 33.33%;
-        @include clearfix;
-    }
-
-
+// MEDIA QUERY MOBIL
 @media #{$width-mobile}{
 
-h1,h2,h3{
-        text-transform: uppercase;
-    }
-    .slogan-cont{
-    display: none;
-}
-.home-container{
-    min-height: 100vh;
-}
-footer{
-
-    font-size: $fontsize-mobile;
-}
-     .desktop-usp{   
-        display: none;
-    } 
-  .topnav a {
-    display: none;
-
-  }
-
-  .foot-adress{
-      display: none;
-  }
-  .topnav a.icon {
-    display: block;
-    // display: flex;
-    position: fixed;
-    right: 0;
-    top: 0;
-    padding: 0.8rem 1rem;
-    text-shadow: none;
-    color: black;  
-  }
-
-    .topnav.responsive { 
-    position: fixed;
-    background-color: $primary-color;
-    // flex-direction:column;
-
-    a:not(:last-child){
-    display: block;
-    // display: flex;
-    padding: 0.8rem 1rem;
-    text-shadow: none;
-    width: 100%;
-    font-size: 1rem;
-    color: black;
-    letter-spacing: normal;
-    
-    &:hover{
-       background-color: lighten( $primary-color2, 30% );
-    }
-  }
-  }
-
-}   
-
-@media #{$width-tablet}{
-p{
-    font-size: $fontsize-tablet;
-
-}
-h1,h2,h3{
-    text-transform: uppercase;
-}
 .slogan-cont{
     display: none;
 }
+
 .home-container{
     min-height: 100vh;
 }
-.assignment-backgrund{
 
+.topnav a {
+    display: none;
+}
+
+.topnav a.icon {
+    display: block;
+    @include prefix-flex;
+    display: flex;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 0.8rem 1rem;
+    text-shadow: none;
+    color: black;  
+}
+
+.topnav.responsive { 
+    position: fixed;
+    background-color: $primary-color;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -ms-flex-direction:column;
+    flex-direction:column;
+    a:not(:last-child){
+        display: block;
+        @include prefix-flex;
         display: flex;
-       flex-direction: row;
+        padding: 0.8rem 1rem;
+        text-shadow: none;
+        width: 100%;
+        font-size: 1rem;
+        color: black;
+        letter-spacing: normal;
+    &:hover{
+       background-color: lighten( $primary-color2, 30% );
+    }
+  }
+}
 
-        padding: 0;
-            header {
-                 width: 100%;
-            }
-            .assignment {
-            width: 45%;
-            float: left;
-            padding-top: 20vh;
-                .assignment-picture{
-                    padding: $padding;
-                }
-            }
-            .assignment-1 {
-            width: 45%;
-            float: right; 
-            padding-top: 20vh;
-                .assignment-picture{
-                    padding: $padding;
-                }
+footer{
+    font-size: $fontsize-mobile;
+    .foot-adress{
+        display: none;
+    }
+}
+
+.desktop-usp{   
+        display: none;
+} 
+}   
+
+// MEDIA QUERY IPAD
+@media #{$width-tablet}{
+
+p{
+    font-size: $fontsize-tablet;
+}
+
+.slogan-cont{
+    display: none;
+}
+
+.home-container{
+    min-height: 100vh;
+}
+
+.assignment-backgrund{
+    @include prefix-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: 0;
+    header {
+        width: 100%;
+        }
+    .assignment {
+        width: 45%;
+        float: left;
+        padding-top: 20vh;
+    .assignment-picture{
+       
+          }
+        }
+    .assignment-1 {
+        width: 45%;
+        float: right; 
+        padding-top: 20vh;
+    .assignment-picture{
+         padding: $padding;
         }
     }
+}
         
-
-
-    .desktop-usp{   
-        display: none;
+.desktop-usp{   
+    display: none;
     } 
  
-    .services-container{
-        display: flex;
-        flex-wrap:wrap;
-        
-            header{
-            flex:3;
-            width: 100%
-            }
-        .usp11{
+.services-container{
+    @include prefix-flex;
+    display: flex;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    flex-wrap:wrap;
+    header{
+        -webkit-box-flex:3;
+        -ms-flex:3;
+        flex:3;
+        width: 100%
+    }
+    .usp11{
         @include usp-float;
         background-color:$primary-color2;
         margin: 0;
+        -webkit-box-flex:1;
+        -ms-flex:1;
         flex:1;
-        
-        
-        }
-        .usp22{
+    }
+    .usp22{
         @include usp-float;
         background-color:$primary-color2;
         margin: 0;
-       flex:1;
-        
-        }
-        .usp33{
+        -webkit-box-flex:1;
+        -ms-flex:1;
+        flex:1;
+    }
+    .usp33{
         @include usp-float;
         background-color:$primary-color2; 
         margin: 0;
-        flex:1;
-            
-        }
-        .service{
-            width: 30%;
-            padding: 0;
-        }
+        -webkit-box-flex:1;
+        -ms-flex:1;
+        flex:1;    
     }
-  .topnav a {
-    display: none;
+    .service{
+        width: 30%;
+        padding: 0;
+    }
+}
 
-  }
-  .topnav a.icon {
- //   display: flex;
+.topnav a {
+    display: none;
+    }
+
+.topnav a.icon {
+    @include prefix-flex;
+    display: flex;
     position: fixed;
     right: 0;
     top: 0;
     padding: 14px 16px;
     text-shadow: none;
     color: black;  
-  }
+    }
 
-    .topnav.responsive { 
+.topnav.responsive { 
     position: fixed;
     background-color: $primary-color;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -ms-flex-direction:column;
     flex-direction:column;
-
     a:not(:last-child){
- //   display: flex;
-    padding: 14px 16px;
-    text-shadow: none;
-    width: 100%;
-    font-size: 1rem;
-    color: black;
-    letter-spacing: normal;
-    
+        @include prefix-flex;
+        display: flex;
+        padding: 14px 16px;
+        text-shadow: none;
+        width: 100%;
+        font-size: 1rem;
+        color: black;
+        letter-spacing: normal;
     &:hover{
-       background-color: lighten( $primary-color2, 30% );
+        background-color: lighten( $primary-color2, 30% );
     }
   }
-  }
- }   
+}
 
+.foot-contact{
+    @include footer-shared-right;
+    @include footer-shared-flex;
+    width: 30%;
+    @include clearfix;
+    }
+    
+.foot-adress{
+    @include  footer-shared-right;
+    @include footer-shared-flex;
+    width: 30%;
+    @include clearfix;
+    }
+    
+.foot-follow{
+    @include footer-shared-right;
+    @include footer-shared-flex;
+    width: 30%;
+    @include clearfix;
+    }
+}   
+
+// MEDIA QUERY DESKTOP
 @media #{$width-desktop}{
 
-    p{
-        font-size: $fontsize-desk;
+p{
+    font-size: $fontsize-desk;
+}
     
-    }
-    h1, h2, h3{
-        text-transform: uppercase;
-    }
-
-    .about-us-container{
-
-       @include flex-column;
-        .about-box{
-            width: 50%;
-            align-self: center;
-            
-        }
+h1, h2, h3{
+    text-transform: uppercase;
     }
 
+.about-us-container{ 
+    @include flex-column;
+    .about-box{
+        width: 50%;
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    } 
+}
     
-    .home-container{
-        background-image: $waves-desk-small;
-    }
-    .assignment-container{
-        background: none;
-        padding:0;
+.home-container{
+    background-image: $waves-desk-small;
+}
+
+.assignment-container{
+    background: none;
+    padding:0;
+    color:white;
+    .assignment-backgrund{
         color:white;
-
-            .assignment-backgrund{
-                
-                color:white;
-                width:100%;
-
-                display:flex;
-                flex-wrap: wrap;
-                justify-content: space-around;
-                  align-items: center;  
-                margin: 0;
-                padding: 0;
-                    header{
-                        width:100%;
-                        height: 20vh;
-                    } 
-                div{
-                    padding: 1rem;
-                }
-            }  
-
-        
-        .assignment{
-            float: right;
-            @include clearfix;
-            width: 40%;
-            padding: 2rem;
-            margin: 30vh 2rem;
-            background-color:$primary-color2;
-            border: $padding;
-            .assignment-picture{
-                padding:0;
-            }
-        } 
-        .assignment-1{
-            float: left;
-            @include clearfix;
-            width: 40%;
-            padding: 0;
-            margin: 30vh 2rem;
-            background-color:$primary-color2;
-            border: $padding;
-            .assignment-picture{
-                padding:0;
-            } 
-        }    
-    }  
-    .services-container{
-      
-        background: none;
+        width:100%;
+        @include prefix-flex;
         display:flex;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-       justify-content: space-around;
-        align-items: center; 
-            header{
-                width:100%;
-                height: 40vh;
-                flex:4;
-            }
-        .usp11{
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;  
+        margin: 0;
+        padding: 0;
+    header{
+        width:100%;
+        height: 20vh;
+    } 
+    div{
+        padding: 1rem;
+    }
+}  
+    .assignment{
+        float: right;
+        @include clearfix;
+        width: 40%;
+        padding: 2rem;
+        margin: 30vh 2rem;
+        background-color:$primary-color2;
+        border: $padding;
+    .assignment-picture{
+        padding:0;
+    }
+    } 
+    .assignment-1{
+        float: left;
+        @include clearfix;
+        width: 40%;
+        padding: 0;
+        margin: 30vh 2rem;
+        background-color:$primary-color2;
+        border: $padding;
+    .assignment-picture{
+        padding:0;
+     } 
+  }    
+}  
+
+.services-container{
+    background: none;
+    @include prefix-flex;
+    display:flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    header{
+        width:100%;
+        height: 40vh;
+        -webkit-box-flex:4;
+        -ms-flex:4;
+        flex:4; 
+    }
+    .usp11{
         @include usp-float;
         background-color:$primary-color2;
         margin: 0;
         padding: 1rem;
         width: 33%;
+        -webkit-box-flex:1;
+        -ms-flex:1;
         flex:1;
+        -ms-flex-item-align:end;
         align-self:flex-end;
-        }
-        .usp22{
+    }
+    .usp22{
         @include usp-float;
         background-color:$primary-color2;
         margin: 0;
         width: 33%;
         padding: 1rem;
+        -webkit-box-flex:1;
+        -ms-flex:1;
         flex:1;
+        -ms-flex-item-align:end;
         align-self:flex-end;
-        }
-        .usp33{
+    }
+    .usp33{
         @include usp-float;
         background-color:$primary-color2; 
         margin: 0;
         width: 33%; 
         padding: 1rem; 
+        -webkit-box-flex:1; 
+        -ms-flex:1; 
         flex:1;   
+        -ms-flex-item-align:end;   
         align-self:flex-end; 
-        }          
+    }          
    
-        }
-        .contact-container {
-        background-color: transparent;
-        display: flex;
-        .contact-header{
-            color:white;
-        }
-        .contact-text {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-        }
-        input.contact-small, label, textarea.contact-small {
-            display: none;
-        }
-        input.contact-large, textarea.contact-large {
-            display: flex;
-        }
-    }
-    input[type=text], textarea {
-        padding: 0.5rem;
-        border: 2px solid black;
-        margin: 1rem 0.5rem;
-        resize: vertical;
-        color: white;
-        background-color: white;
-        min-width: 700px;
-    }
-    textarea {
-        max-height: 100px;
-    }
-
 }
 
+.usp-picture{
+    background-color:$primary-color2;    
+}
 
-// @import 'variabel';
-// @import 'reset';
-// @import 'navbar';
-// @import 'button';
-// @import 'main';
-// @import 'footer';
-// @import 'aside';
-// @import 'mixins';
-// @supports not (display: flex){
-// .home-container {
-//     @include block-container;
-//     background-image: $waves-icon ,$start-pic;
-//     min-height: 80vh;;
-//     background-repeat: no-repeat,no-repeat;
-//     background-position: 50% 50%;
-//     background-size: auto, cover;
-// }
-
-
- 
-// .about-us-container {
-//     @include block-container;
-//     background-color: $primary-color2;
-//     color: $primary-color;
-//     min-height: 100vh;
-//     padding: 6px;
-//     @include padding-bot;
-//     text-align: center;
-//     a{
-//         color: black;
-//         &:hover{
-//             color: $primary-color2;
-//         }
-//     }
-//     .about-box{
-//         padding: 0 2rem;
-//     }
-
-// }
-// .employees-container 
-// {   
-//     display: inline-block;
-//     min-width: 100vw;
-//     background-color: $primary-color2;
-//     color: $primary-color;
-//     div {
-//         float: left;
-//         background-color: $primary-color;
-//         color: black;
-//         width: 30%;
-//         margin: 0 4px;
-        
-//     }
-
-// }
-// .assignment-container {
-//     @include block-container;
-//     min-height: 100vh;
-//     background-color: $primary-color;
-//     color: black;
-//     padding: 3rem;
-//     text-align: center;
+.contact-container {
+    background-color: transparent;
+    @include prefix-flex;
+    display: flex;
+    .contact-header{
+        color:white;
+    }
+    .contact-text {
+        @include prefix-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 100%;
+    }
+    input.contact-small, label, textarea.contact-small {
+        display: none;
+    }
+    input.contact-large, textarea.contact-large {
+        @include prefix-flex;
+        display: flex;
+    }
+}
     
-//     }
-//     .assignment-1{
-//         margin-bottom: 4rem;
-//     }
-
-
-// .services-container {
-//     @include block-container;
-//     background-color: $primary-color2;
-//     min-height: 100vh;
-//     padding-top: 1rem;
-//     padding-bottom: 2rem;
-//     text-align: center;
-//     background-color: $primary-color2;
-//     header{
-//         width: 100%;
-//         color:white;
-//     }
-   
-//         a:link {
-//             text-decoration: none;
-//             color:white
-//         }
-//         a:visited {
-//             text-decoration: none;
-//             color:white
-//         }
-//         a:hover {
-//             text-decoration: none;
-//             color:white
-//         }
-//         a:active {
-//             text-decoration: none;
-//             color:white
-//         }    
+input[type=text], textarea {
+    padding: 0.5rem;
+    border: 2px solid black;
+    margin: 1rem 0.5rem;
+    resize: vertical;
+    color: white;
+    background-color: white;
+    min-width: 700px;
+}
     
-// }
-// .desktop-usp{
-// @include flex-container;
-//     .uspar{
-//         min-height: 100vh;
-//         color:white;
-//         background: none;
-//         display:flex;
-//         flex-wrap: wrap;
-//         justify-content: space-around;
-//         align-items: center;
-//         .header{
-//             width: 100%;
-//             min-height: 40vh;
-//         }
-//         .usp-container {
-//             display:flex;
-//             background-color: $primary-color2;
-//             padding: $padding; 
-//         justify-content: center;
-//         align-items: center;
-
-//         }
-        
-//             .usp-picture{
-//             flex-grow: 1;
-//             min-width: 30%;
-
-//         }
-//             .usp-text{
-//             background-color: $primary-color;
-//             flex-grow: 2;
-//             padding: $padding;
-//             color:black;
-//             min-width: 60%
-//         }
-//     }
-
-
-// }
-
-// .contact-container {
-//     @include block-container;
-//     background-color: $primary-color;
-//     min-width: 100%;
-//     padding-top: 2rem;
-//     min-height: 90vh;
-//     .contact-text {
-//         display: none;
-//     }
-//     header {
-//         min-width: 100%;
-//     }
-//     input.contact-large, textarea.contact-large {
-//         display: none;
-//     }
-//     input.contact-small, textarea.contact-small {
-//     @include block-container;
-//     }
-//     textarea {
-//         min-height: 5rem;
-//     }
-// }
-// .contact-head{
-//     text-align: center; 
-// }
-// form{
-   
-//     padding: 2rem;
-// }
-// input[type=text], textarea {
-//     padding: 0.5rem 5rem;
-//     border: none;
-//     border-bottom: 2px solid black;
-//     background-color: $primary-color;
-   
-// }
-
-
-// @media #{$width-mobile}{
-
-//     .parallax{
-//         background-image:none;
-//     }
-
-// h1,h2,h3{
-//         text-transform: uppercase;
-//     }
-//     .slogan-cont{
-//     display: none;
-// }
-// .home-container{
-//     min-height: 100vh;
-// }
-// footer{
-
-//     font-size: $fontsize-mobile;
-// }
-//      .desktop-usp{   
-//         display: none;
-//     } 
-//   .topnav a {
-//     display: none;
-
-//   }
-
-//   .foot-adress{
-//       display: none;
-//   }
-//   .topnav{
-//       float: left;
-//   }
-//   .topnav a.icon {
-//     display: block;
-//     float: right;
-//     position: fixed;
-//     right: 0;
-//     top: 0;
-//     padding: 14px 16px;
-//     text-shadow: none;
-//     color: black;  
-//   }
-
-//     .topnav.responsive { 
-//     position: fixed;
-//     background-color: $primary-color;
-
-//     a:not(:last-child){
-//     display: block;
-//     padding: 14px 16px;
-//     text-shadow: none;
-//     width: 100%;
-//     font-size: 1rem;
-//     color: black;
-//     letter-spacing: normal;
+textarea {
+    max-height: 100px;
+}
     
-//     &:hover{
-//        background-color: lighten( $primary-color2, 30% );
-//     }
-//   }
-//   }
-//   footer{
-//     display: inline-block;
-//     min-width: 100%;
-//     min-height: 10vh;
-//     background-color: $primary-color2;
-//     text-transform: uppercase;
-//     }
-
-// %foot-shared{
-// float: left;
-// width: 50%;
-// min-height: 100%;
-// color: $nav-color;
-// text-decoration: none;
-// text-align: center;
-// font-size:0.5rem;
-// letter-spacing: 5px;
-// text-shadow: 1px 1px $start-shadow;
-
+.foot-contact{
+    @include footer-shared-right;
+    @include footer-shared-flex;
+    width: 30%;
+    @include clearfix;
+}
     
-//     a{
-//         text-decoration: none;
-//         font-size:$fontsize-mobile;
-//         color: $logo-color;
-//     &:visited{
-//         color: $logo-color;
-//     }
-//     &:hover{
-//         font-size: 1rem;
-//         transition: all 400ms;
-//     }
-        
-// }  
-
-// }
-
-// .foot-contact{
-//     min-width: 33.33%;
-//     @extend %foot-shared;
-
- 
-// }
-
-// .foot-adress{
-//     min-width: 33.33%;
-//     @extend %foot-shared;
-
-// }
-
-// .foot-follow{
-//     min-width: 33.33%;
-//     @extend %foot-shared;
-
-// }
-// }   
-
-// @media #{$width-tablet}{
-// p{
-//     font-size: $fontsize-tablet;
-
-// }
-// h1,h2,h3{
-//     text-transform: uppercase;
-// }
-// .slogan-cont{
-//     display: none;
-// }
-// .home-container{
-//     min-height: 100vh;
-// }
-
-//     .assignment-backgrund{
-//         text-align: center;
-//         width: 100%;
-
-//         .assignment-1{
-//             display: inline-block;
-//             width: 40%;
-//             margin: 1rem;
-//             padding: 1rem;
-//             padding-top: 15rem;
-//         }
-
+.foot-adress{
+    @include  footer-shared-right;
+    @include footer-shared-flex;
+    width: 30%;
+    @include clearfix;
+}
     
-//         .assignment{
-//             display: inline-block;
-//             width: 40%;
-//             margin: 1rem;
-//             padding: 1rem;
-            
-//         }
-//     }
-//     .desktop-usp{   
-//         display: none;
-//     } 
- 
-//     .services-container{
-
-//         .service{
-//             display: inline-block;
-//             width: 30%;
-//             padding-top: 15rem;
-//         }
-//     }
-//   .topnav a {
-//     display: none;
-
-//   }
-//   .topnav a.icon {
-//     display: flex;
-//     position: fixed;
-//     right: 0;
-//     top: 0;
-//     padding: 14px 16px;
-//     text-shadow: none;
-//     color: black;  
-//   }
-
-//     .topnav.responsive { 
-//     position: fixed;
-//     background-color: $primary-color;
-//     flex-direction:column;
-
-//     a:not(:last-child){
-//     display: flex;
-//     padding: 14px 16px;
-//     text-shadow: none;
-//     width: 100%;
-//     font-size: 1rem;
-//     color: black;
-//     letter-spacing: normal;
-    
-//     &:hover{
-//        background-color: lighten( $primary-color2, 30% );
-//     }
-//   }
-//   }
-//   footer{
-//     display: inline-block;
-//     min-width: 100%;
-//     min-height: 10vh;
-//     background-color: $primary-color2;
-//     text-transform: uppercase;
-
-//     a{
-//         text-decoration: none;
-//         font-size:$fontsize-mobile;
-//         color: $logo-color;
-//     &:visited{
-//         color: $logo-color;
-//     }
-//     &:hover{
-//         font-size: 1rem;
-//         transition: all 400ms;
-//     }
-        
-// }  
-
-// }
-
-// form{
-//     padding-top: 15rem;
-// }
-
-// .foot-contact{
-//     min-width: 33.33%;
-//     @include footer-shared-block;
-
- 
-// }
-
-// .foot-adress{
-//     min-width: 33.33%;
-//     @include footer-shared-block;
-
-// }
-
-// .foot-follow{
-//     min-width: 33.33%;
-//     @include footer-shared-block;
-
-// }
-  
-//  }   
-
-// @media #{$width-desktop}{
-
-//     p{
-//         font-size: $fontsize-desk;
-    
-//     }
-//     h1, h2, h3{
-//         text-transform: uppercase;
-//     }
-
-//     .about-us-container{
-//        @include flex-column;
-//         .about-box{
-//             width: 50%;
-//             align-self: center;
-            
-//         }
-//     }
-
-    
-//     .home-container{
-//         background-image: $waves-desk-small;
-//     }
-//     .assignment-container{
-//         background: none;
-//         padding:0;
-
-//             .assignment-backgrund{
-//                 background-color: $primary-color;
-//                 color:white;
-//                 width:100%;
-//                 display:flex;
-//                 flex-wrap: wrap;
-//                 justify-content: space-around;
-//                 align-items: center;  
-//                 margin: 0;
-//                 padding: 0;
-//                     header{
-//                         width:100%;
-//                     } 
-             
-//             }  
-//         .assignment{
-//             width: 40%;
-//             margin-top: -20rem;
-//             min-height: 35vh;
-//             padding: 0;
-//             background-color:$primary-color2;
-//             border: $padding;
-//             .assignment-picture{
-//                 padding:0;
-//             } 
-//         }    
-//     }  
-//     .services-container{
-      
-//         background: none;
-//         display:flex;
-//         flex-wrap: wrap;
-//         justify-content: space-around;
-//         align-items: center; 
-//             header{
-//                 width:100%;
-//             }
-//             .service{
-
-//                 width: 30%;
-//                 padding: 0;
-//                 background-color:$primary-color2;
-//                 min-height: 40vh;
-              
-//             }
-//         }
-//         .contact-container {
-//         background-color: transparent;
-//         .contact-text {
-//             display: flex;
-//             justify-content: center;
-//             width: 100%;
-//         }
-//         input.contact-small, label, textarea.contact-small {
-//             display: none;
-//         }
-//         input.contact-large, textarea.contact-large {
-//             display: flex;
-//         }
-//     }
-//     input[type=text], textarea {
-//         padding: 0.5rem;
-//         border: 2px solid black;
-//         margin: 1rem 0.5rem;
-//         resize: vertical;
-//         color: white;
-//         background-color: white;
-//         min-width: 700px;
-//     }
-//     textarea {
-//         max-height: 100px;
-//     }
-
-// }
-// }
-
-
-
+.foot-follow{
+    @include footer-shared-right;
+    @include footer-shared-flex;
+    width: 30%;
+    @include clearfix;
+}
+}
 
 

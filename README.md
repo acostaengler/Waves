@@ -27,4 +27,5 @@ We offer a full package regarding name branding, slogans and design profile, and
 ![screenshot-m](https://user-images.githubusercontent.com/31956031/35618886-9129d102-067c-11e8-9b15-a9847edb1965.jpeg)
 
 ### Live page
-https://github.com/acostaengler/waves
+https://github.com/acostaengler/waves/
+
