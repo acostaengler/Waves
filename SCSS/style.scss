@@ -1,5 +1,3 @@
-
-
 // In this 'final' scss-file, in sass we split up the code
 // into partials to manage it more easily. 
 
@@ -27,6 +25,7 @@
 }
 
 // OM OSS
+
 .about-us-container {
     display: inline-block;
     @include flex-container;
@@ -61,9 +60,10 @@
     padding: 1rem;
     div {
         background-color: $primary-color;
+        padding: 0.5rem;
         color: black;
         float: left;
-        width: 30%;
+        max-width: 30%;
         @include clearfix;
         margin: 3px;
     }
