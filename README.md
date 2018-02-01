@@ -20,6 +20,15 @@ We take care of our customers online wishes, targeting mainly small to medium co
 ## Services
 We offer a full package regarding name branding, slogans and design profile, and implementing them on their new and improved website, with attracting more customers in mind first hand. 
 
+### Mobile, Tablet and Desktop
+* Adjusted to perfection on all digital devices. 
+
+### SEO
+* Working with Waves will ensure that your webpage will be easy to find for long standing customers and attract new.
+
+### 360° Solution
+* Nothing will be overlooked to help create a solution that covers every angel.
+
 ### Screenshot Desktop
 ![screendump_readme](https://user-images.githubusercontent.com/31956031/35617698-350a0692-0679-11e8-8ad1-9a0fdec842eb.jpeg)
 
