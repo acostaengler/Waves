@@ -34,6 +34,7 @@
     min-height: 100vh;
     min-width: 100vw;
     text-align: center;
+    padding: 1.5rem;
     h1{
         float: left;
         min-width: 100%;
@@ -46,26 +47,40 @@
         }
     }
     .about-box{
-        padding: 0 2rem;
         text-align: justify;
     }
 }
 
 .employees-container{   
-    display: block;
+    display: inline-block; // ÄNDRAT från block till inline-block. Med inline-block täcker blåa bakgrunden medarbetar bilderna inte med block
     @include flex-container;
-    min-width: 100vw;
+    max-width: 100vw; // ÄNDRAT TILL MAX ISTÄLLET FÖR MIN GÖR SÅ ATT BILDERNA FLOATAR I MITTEN HELA TIDEN
     background-color: $primary-color2;
     color: $primary-color;
-    padding: 1rem;
-    div {
+    .employee1 {
         background-color: $primary-color;
         color: black;
         float: left;
         max-width: 30%;
         padding: 0.5rem;
         @include clearfix;
-        margin: 3px;
+    }
+    .employee2{
+        background-color: $primary-color;
+        color: black;
+        display: inline-block;
+        max-width: 30%;
+        padding: 0.5rem;
+        @include clearfix;
+        
+    }
+    .employee3{
+        float: right;
+        background-color: $primary-color;
+        color: black;
+        max-width: 30%;
+        padding: 0.5rem;
+        @include clearfix;  
     }
 }
 
@@ -310,7 +325,7 @@ p{
     .assignment {
         width: 45%;
         float: left;
-       // padding-top: 20vh;
+        padding-top: 20vh; // ???????????
     .assignment-picture{
         padding: $padding;
        
@@ -319,7 +334,7 @@ p{
     .assignment-1 {
         width: 45%;
         float: left; 
-       // padding-top: 20vh;
+        padding-top: 20vh; // ??????????????
     .assignment-picture{
          padding: $padding;
         }

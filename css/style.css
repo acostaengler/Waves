@@ -352,10 +352,6 @@ footer {
   background-size: auto, cover;
 }
 
-.home-container div {
-  margin: .625rem;
-}
-
 .about-us-container {
   display: inline-block;
   display: -webkit-box;
@@ -373,10 +369,7 @@ footer {
   min-height: 100vh;
   min-width: 100vw;
   text-align: center;
-}
-
-.about-us-container div {
-  margin: .625rem;
+  padding: 1.5rem;
 }
 
 .about-us-container h1 {
@@ -399,12 +392,11 @@ footer {
 }
 
 .about-us-container .about-box {
-  padding: 0 2rem;
   text-align: justify;
 }
 
 .employees-container {
-  display: block;
+  display: inline-block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -415,26 +407,48 @@ footer {
   flex-wrap: wrap;
   width: 100%;
   text-align: center;
-  min-width: 100vw;
+  max-width: 100vw;
   background-color: #387284;
   color: #dacfc3;
-  padding: 1rem;
 }
 
-.employees-container div {
-  margin: .625rem;
-}
-
-.employees-container div {
+.employees-container .employee1 {
   background-color: #dacfc3;
   color: black;
   float: left;
   max-width: 30%;
   padding: 0.5rem;
-  margin: 3px;
 }
 
-.employees-container div:after {
+.employees-container .employee1:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.employees-container .employee2 {
+  background-color: #dacfc3;
+  color: black;
+  display: inline-block;
+  max-width: 30%;
+  padding: 0.5rem;
+}
+
+.employees-container .employee2:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.employees-container .employee3 {
+  float: right;
+  background-color: #dacfc3;
+  color: black;
+  max-width: 30%;
+  padding: 0.5rem;
+}
+
+.employees-container .employee3:after {
   content: "";
   display: block;
   clear: both;
@@ -457,10 +471,6 @@ footer {
   background-color: #dacfc3;
   color: black;
   text-align: center;
-}
-
-.assignment-container div {
-  margin: .625rem;
 }
 
 .assignment-container .assignment, .assignment-container .assignment-1 {
@@ -491,10 +501,6 @@ footer {
   background-color: #387284;
   padding-bottom: 2rem;
   background-color: #387284;
-}
-
-.services-container div {
-  margin: .625rem;
 }
 
 .services-container header {
@@ -545,10 +551,6 @@ footer {
   flex-wrap: wrap;
   width: 100%;
   text-align: center;
-}
-
-.desktop-usp div {
-  margin: .625rem;
 }
 
 .desktop-usp .uspar {
@@ -759,6 +761,7 @@ input[type=text], textarea {
   .assignment-backgrund .assignment {
     width: 45%;
     float: left;
+    padding-top: 20vh;
   }
   .assignment-backgrund .assignment .assignment-picture {
     padding: 2rem;
@@ -766,6 +769,7 @@ input[type=text], textarea {
   .assignment-backgrund .assignment-1 {
     width: 45%;
     float: left;
+    padding-top: 20vh;
   }
   .assignment-backgrund .assignment-1 .assignment-picture {
     padding: 2rem;
