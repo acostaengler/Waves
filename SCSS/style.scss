@@ -452,6 +452,8 @@ p{
 // MEDIA QUERY DESKTOP
 @media #{$width-desktop}{
 
+    /* Jag har ingen aning om vad tanken här är med alla flex attribut och det är för mycket att fixa, fråga Robert */
+
 p{
     font-size: $fontsize-desk;
 }
@@ -461,9 +463,23 @@ h1, h2, h3{
     }
 
 .about-us-container{ 
+    display: block;
+        h1{
+            float: left;
+            min-width: 100%;
+        }
+            h2{
+                float: left;
+                min-width: 100%;
+                @include clearfix;
+                
+            }
+    min-width: 100%;
     @include flex-column;
     .about-box{
-        width: 50%;
+        float: left;
+        min-width: 50%;
+        @include clearfix;
         -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -472,7 +488,9 @@ h1, h2, h3{
     
 .home-container{
     background-image: $waves-desk-small;
+    font-weight: bold;
 }
+  /* Jag har ingen aning om vad tanken här är med alla flex attribut och det är för mycket att fixa, fråga Robert */
 
 .assignment-container{
     background: none;
@@ -549,7 +567,7 @@ h1, h2, h3{
         background-color:$primary-color2;
         margin: 0;
         padding: 1rem;
-        width: 33%;
+        min-width: 33%;
         -webkit-box-flex:1;
         -ms-flex:1;
         flex:1;
@@ -560,7 +578,7 @@ h1, h2, h3{
         @include usp-float;
         background-color:$primary-color2;
         margin: 0;
-        width: 33%;
+        min-width: 33%;
         padding: 1rem;
         -webkit-box-flex:1;
         -ms-flex:1;
@@ -572,16 +590,18 @@ h1, h2, h3{
         @include usp-float;
         background-color:$primary-color2; 
         margin: 0;
-        width: 33%; 
+        min-width: 33%; 
         padding: 1rem; 
         -webkit-box-flex:1; 
         -ms-flex:1; 
         flex:1;   
         -ms-flex-item-align:end;   
         align-self:flex-end; 
-    }          
+    }
+  
    
 }
+
 
 .usp-picture{
     background-color:$primary-color2;    
@@ -630,6 +650,15 @@ textarea {
     @include footer-shared-flex;
     width: 30%;
     @include clearfix;
+    p{
+        font-size: 120%;
+    }
+    a{
+        font-size: 120%;
+        &:hover{
+            font-size:180%;
+        }
+    }
 }
     
 .foot-adress{
@@ -637,6 +666,16 @@ textarea {
     @include footer-shared-flex;
     width: 30%;
     @include clearfix;
+    p{
+        font-size: 120%;
+    }
+    a{
+        font-size: 120%;
+        &:hover{
+            font-size:180%;
+        }
+    }
+    
 }
     
 .foot-follow{
@@ -644,6 +683,15 @@ textarea {
     @include footer-shared-flex;
     width: 30%;
     @include clearfix;
+    p{
+        font-size: 120%;
+    }
+    a{
+        font-size: 120%;
+        &:hover{
+            font-size:180%;
+        }
+    }
 }
 }
 
