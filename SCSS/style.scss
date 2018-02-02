@@ -1,5 +1,4 @@
 
-
 // In this 'final' scss-file, in sass we split up the code
 // into partials to manage it more easily. 
 
@@ -85,6 +84,7 @@
     }
     p{
         text-align: justify;
+        
     }
 }
 
@@ -103,6 +103,10 @@
         min-width: 100%;
         color:white;
         @include clearfix;
+    }
+    p{
+        text-align: center;
+        padding: 2rem;
     }
     a:link {
         text-decoration: none;
@@ -307,12 +311,13 @@ p{
         float: left;
         padding-top: 20vh;
     .assignment-picture{
+        padding: $padding;
        
           }
         }
     .assignment-1 {
         width: 45%;
-        float: right; 
+        float: left; 
         padding-top: 20vh;
     .assignment-picture{
          padding: $padding;
