@@ -391,7 +391,8 @@ footer {
   background-color: #dacfc3;
   color: black;
   float: left;
-  width: 30%;
+  padding: 0.5rem;
+  max-width: 30%;
   margin: 3px;
 }
 
