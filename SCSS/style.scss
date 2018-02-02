@@ -340,34 +340,44 @@ p{
         -ms-flex:3;
         flex:3;
         width: 100%
+
     }
     .usp11{
         @include usp-float;
         background-color:$primary-color2;
-        margin: 0;
-        -webkit-box-flex:1;
-        -ms-flex:1;
-        flex:1;
+        min-width: 33.33%;
+        margin:0;
+        // -webkit-box-flex:1;
+        // -ms-flex:1;
+        // flex:1;
     }
     .usp22{
         @include usp-float;
         background-color:$primary-color2;
+        min-width: 33.33%;
         margin: 0;
-        -webkit-box-flex:1;
-        -ms-flex:1;
-        flex:1;
+        // -webkit-box-flex:1;
+        // -ms-flex:1;
+        // flex:1;
     }
     .usp33{
         @include usp-float;
         background-color:$primary-color2; 
+        min-width: 33.33%;
         margin: 0;
-        -webkit-box-flex:1;
-        -ms-flex:1;
-        flex:1;    
+        // -webkit-box-flex:1;
+        // -ms-flex:1;
+        // flex:1;    
     }
     .service{
-        width: 30%;
+        min-width: 30%;
         padding: 0;
+        h3{
+            font-size: 120%;
+        }
+        p{
+            text-align: justify;
+        }
     }
 }
 
@@ -413,6 +423,9 @@ p{
     @include footer-shared-flex;
     width: 30%;
     @include clearfix;
+    p{
+        font-size: 120%;
+    }
     }
     
 .foot-adress{
@@ -420,6 +433,9 @@ p{
     @include footer-shared-flex;
     width: 30%;
     @include clearfix;
+    p{
+        font-size: 120%;
+    }
     }
     
 .foot-follow{
@@ -427,6 +443,9 @@ p{
     @include footer-shared-flex;
     width: 30%;
     @include clearfix;
+    p{
+        font-size: 120%;
+    }
     }
 }   
 

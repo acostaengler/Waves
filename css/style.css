@@ -632,10 +632,8 @@ input[type=text], textarea {
       padding: 2rem;
       padding-top: 20vh;
       background-color: #387284;
-      margin: 0;
-      -webkit-box-flex: 1;
-      -ms-flex: 1;
-      flex: 1; }
+      min-width: 33.33%;
+      margin: 0; }
       .services-container .usp11:after {
         content: "";
         display: block;
@@ -647,10 +645,8 @@ input[type=text], textarea {
       padding: 2rem;
       padding-top: 20vh;
       background-color: #387284;
-      margin: 0;
-      -webkit-box-flex: 1;
-      -ms-flex: 1;
-      flex: 1; }
+      min-width: 33.33%;
+      margin: 0; }
       .services-container .usp22:after {
         content: "";
         display: block;
@@ -662,17 +658,19 @@ input[type=text], textarea {
       padding: 2rem;
       padding-top: 20vh;
       background-color: #387284;
-      margin: 0;
-      -webkit-box-flex: 1;
-      -ms-flex: 1;
-      flex: 1; }
+      min-width: 33.33%;
+      margin: 0; }
       .services-container .usp33:after {
         content: "";
         display: block;
         clear: both; }
     .services-container .service {
-      width: 30%;
+      min-width: 30%;
       padding: 0; }
+      .services-container .service h3 {
+        font-size: 120%; }
+      .services-container .service p {
+        text-align: justify; }
 
   .topnav a {
     display: none; }
@@ -759,6 +757,8 @@ input[type=text], textarea {
       content: "";
       display: block;
       clear: both; }
+    .foot-contact p {
+      font-size: 120%; }
 
   .foot-adress {
     float: right;
@@ -807,6 +807,8 @@ input[type=text], textarea {
       content: "";
       display: block;
       clear: both; }
+    .foot-adress p {
+      font-size: 120%; }
 
   .foot-follow {
     float: right;
@@ -854,7 +856,9 @@ input[type=text], textarea {
     .foot-follow:after {
       content: "";
       display: block;
-      clear: both; } }
+      clear: both; }
+    .foot-follow p {
+      font-size: 120%; } }
 @media (min-width: 799px) {
   p {
     font-size: 1.3rem; }
