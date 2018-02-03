@@ -490,24 +490,10 @@ footer {
   min-height: 100vh;
   min-width: 100vw;
   display: block;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  width: 100%;
-  text-align: center;
   text-align: center;
   background-color: #387284;
   padding-bottom: 2rem;
   background-color: #387284;
-}
-
-.services-container div {
-  margin: 0.3rem;
 }
 
 .services-container header {
@@ -1099,10 +1085,6 @@ input[type=text], textarea {
   h1, h2, h3 {
     text-transform: uppercase;
   }
-  .topnav {
-    display: inline-block;
-    float: left;
-  }
   .about-us-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1214,7 +1196,7 @@ input[type=text], textarea {
     background-color: #387284;
     margin: 0;
     padding: 1rem;
-    min-width: 33%;
+    width: 33%;
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -1234,7 +1216,7 @@ input[type=text], textarea {
     padding-top: 20vh;
     background-color: #387284;
     margin: 0;
-    min-width: 33%;
+    width: 33%;
     padding: 1rem;
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -1255,7 +1237,7 @@ input[type=text], textarea {
     padding-top: 20vh;
     background-color: #387284;
     margin: 0;
-    min-width: 33%;
+    width: 33%;
     padding: 1rem;
     -webkit-box-flex: 1;
     -ms-flex: 1;
