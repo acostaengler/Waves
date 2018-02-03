@@ -54,22 +54,12 @@
         @include employees;
         float: left;
         margin-right: auto;
-<<<<<<< HEAD
         @include clearfix;
     }
     .employee2{
         @include employees;
         display: inline-block;
-        @include clearfix;
-=======
-        @include clearfix;
-    }
-    .employee2{
-        @include employees;
-        display: inline-block;
-        @include clearfix;
->>>>>>> hani-new
-        
+        @include clearfix;       
     }
     .employee3{
         @include employees;
