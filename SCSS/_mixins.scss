@@ -139,3 +139,10 @@
     display: -webkit-flex; 
     display: flex;
 }
+
+@mixin employees{
+    background-color: $primary-color;
+    color: black;
+    max-width: 30%;
+    padding: 0.5rem;
+}

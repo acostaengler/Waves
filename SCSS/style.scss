@@ -35,11 +35,7 @@
     min-height: 100vh;
     min-width: 100vw;
     text-align: center;
-    h1{
-        float: left;
-        min-width: 100%;
-        @include clearfix; 
-    }
+    padding: 1.5rem;
     a{
         color: black;
     &:hover{
@@ -47,7 +43,6 @@
         }
     }
     .about-box{
-        padding: 0 2rem;
         text-align: justify;
     }
 }
@@ -55,20 +50,26 @@
 .employees-container{   
     display: block;
     @include flex-container;
-    min-width: 100vw;
-    background-color: $primary-color2;
-    color: $primary-color;
-    padding: 1rem;
-    div {
-        background-color: $primary-color;
-        color: black;
+    .employee1 {
+        @include employees;
         float: left;
-        padding: 0.5rem;
-        max-width: 30%;
+        margin-right: auto;
         @include clearfix;
-        margin: 3px;
+    }
+    .employee2{
+        @include employees;
+        display: inline-block;
+        @include clearfix;
+        
+    }
+    .employee3{
+        @include employees;
+        float: right;
+        margin-left: auto;
+        @include clearfix;  
     }
 }
+
 
 // UPPDRAG
 .assignment-container {
@@ -438,13 +439,11 @@ h1, h2, h3{
     }
 
 .about-us-container{ 
-    @include flex-column;
-    .about-box{
-        width: 50%;
-        -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    } 
+     @include flex-column;
+    .employees-container{
+        max-width: 60vw;
+        margin: 0 auto;
+    }
 }
     
 .home-container{
