@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -7,7 +8,23 @@ body {
 }
 
 p {
-  font-size: 0.625rem;
+  font-size: 1rem;
+  line-height: 1.4em;
+}
+
+h1 {
+  font-size: 250%;
+  letter-spacing: .5rem;
+}
+
+h2 {
+  font-size: 200%;
+  letter-spacing: .3rem;
+}
+
+h3 {
+  font-size: 150%;
+  letter-spacing: .2rem;
 }
 
 * {
@@ -21,6 +38,10 @@ img {
 
 h1, h2, h3 {
   text-transform: uppercase;
+<<<<<<< HEAD
+=======
+  line-height: 1.4em;
+>>>>>>> hani-new
 }
 
 .topnav {
@@ -121,21 +142,39 @@ footer {
   color: whitesmoke;
   text-decoration: none;
   text-align: center;
+<<<<<<< HEAD
   font-size: 0.5rem;
+=======
+  font-size: 0.7rem;
+>>>>>>> hani-new
   letter-spacing: 5px;
   text-shadow: 1px 1px #1f2a30;
   color: whitesmoke;
   text-decoration: none;
   text-align: center;
+<<<<<<< HEAD
   font-size: 0.5rem;
+=======
+  font-size: 0.7rem;
+>>>>>>> hani-new
   letter-spacing: 5px;
   text-shadow: 1px 1px #1f2a30;
   min-width: 33.33%;
 }
 
+<<<<<<< HEAD
 .foot-contact a {
   text-decoration: none;
   font-size: 0.625rem;
+=======
+.foot-contact p {
+  font-size: 80%;
+}
+
+.foot-contact a {
+  text-decoration: none;
+  font-size: 80%;
+>>>>>>> hani-new
   color: rgba(115, 199, 203, 0.89);
 }
 
@@ -144,6 +183,7 @@ footer {
 }
 
 .foot-contact a:hover {
+<<<<<<< HEAD
   font-size: 1rem;
   transition: all 400ms;
 }
@@ -151,6 +191,19 @@ footer {
 .foot-contact a {
   text-decoration: none;
   font-size: 0.625rem;
+=======
+  font-size: 120%;
+  transition: all 400ms;
+}
+
+.foot-contact p {
+  font-size: 80%;
+}
+
+.foot-contact a {
+  text-decoration: none;
+  font-size: 80%;
+>>>>>>> hani-new
   color: rgba(115, 199, 203, 0.89);
 }
 
@@ -159,7 +212,11 @@ footer {
 }
 
 .foot-contact a:hover {
+<<<<<<< HEAD
   font-size: 1rem;
+=======
+  font-size: 120%;
+>>>>>>> hani-new
   -webkit-transition: all 400ms;
   -o-transition: all 400ms;
   transition: all 400ms;
@@ -175,15 +232,29 @@ footer {
   color: whitesmoke;
   text-decoration: none;
   text-align: center;
+<<<<<<< HEAD
   font-size: 0.5rem;
+=======
+  font-size: 0.7rem;
+>>>>>>> hani-new
   letter-spacing: 5px;
   text-shadow: 1px 1px #1f2a30;
   min-width: 33.33%;
 }
 
+<<<<<<< HEAD
 .foot-adress a {
   text-decoration: none;
   font-size: 0.625rem;
+=======
+.foot-adress p {
+  font-size: 80%;
+}
+
+.foot-adress a {
+  text-decoration: none;
+  font-size: 80%;
+>>>>>>> hani-new
   color: rgba(115, 199, 203, 0.89);
 }
 
@@ -192,7 +263,11 @@ footer {
 }
 
 .foot-adress a:hover {
+<<<<<<< HEAD
   font-size: 1rem;
+=======
+  font-size: 120%;
+>>>>>>> hani-new
   -webkit-transition: all 400ms;
   -o-transition: all 400ms;
   transition: all 400ms;
@@ -211,21 +286,39 @@ footer {
   color: whitesmoke;
   text-decoration: none;
   text-align: center;
+<<<<<<< HEAD
   font-size: 0.5rem;
+=======
+  font-size: 0.7rem;
+>>>>>>> hani-new
   letter-spacing: 5px;
   text-shadow: 1px 1px #1f2a30;
   color: whitesmoke;
   text-decoration: none;
   text-align: center;
+<<<<<<< HEAD
   font-size: 0.5rem;
+=======
+  font-size: 0.7rem;
+>>>>>>> hani-new
   letter-spacing: 5px;
   text-shadow: 1px 1px #1f2a30;
   min-width: 33.33%;
 }
 
+<<<<<<< HEAD
 .foot-follow a {
   text-decoration: none;
   font-size: 0.625rem;
+=======
+.foot-follow p {
+  font-size: 80%;
+}
+
+.foot-follow a {
+  text-decoration: none;
+  font-size: 80%;
+>>>>>>> hani-new
   color: rgba(115, 199, 203, 0.89);
 }
 
@@ -234,15 +327,29 @@ footer {
 }
 
 .foot-follow a:hover {
+<<<<<<< HEAD
   font-size: 1rem;
+=======
+  font-size: 120%;
+>>>>>>> hani-new
   -webkit-transition: all 400ms;
   -o-transition: all 400ms;
   transition: all 400ms;
 }
 
+<<<<<<< HEAD
 .foot-follow a {
   text-decoration: none;
   font-size: 0.625rem;
+=======
+.foot-follow p {
+  font-size: 80%;
+}
+
+.foot-follow a {
+  text-decoration: none;
+  font-size: 80%;
+>>>>>>> hani-new
   color: rgba(115, 199, 203, 0.89);
 }
 
@@ -251,7 +358,11 @@ footer {
 }
 
 .foot-follow a:hover {
+<<<<<<< HEAD
   font-size: 1rem;
+=======
+  font-size: 120%;
+>>>>>>> hani-new
   -webkit-transition: all 400ms;
   -o-transition: all 400ms;
   transition: all 400ms;
@@ -336,10 +447,13 @@ footer {
   min-width: 100vw;
   text-align: center;
   padding: 1.5rem;
+<<<<<<< HEAD
 }
 
 .about-us-container div {
   margin: .625rem;
+=======
+>>>>>>> hani-new
 }
 
 .about-us-container a {
@@ -356,7 +470,10 @@ footer {
 
 .employees-container {
   display: block;
+<<<<<<< HEAD
   padding: 10px;
+=======
+>>>>>>> hani-new
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -369,10 +486,13 @@ footer {
   text-align: center;
 }
 
+<<<<<<< HEAD
 .employees-container div {
   margin: .625rem;
 }
 
+=======
+>>>>>>> hani-new
 .employees-container .employee1 {
   background-color: #dacfc3;
   color: black;
@@ -380,6 +500,7 @@ footer {
   padding: 0.5rem;
   float: left;
   margin-right: auto;
+<<<<<<< HEAD
 }
 
 .employees-container .employee1:after {
@@ -411,6 +532,39 @@ footer {
   margin-left: auto;
 }
 
+=======
+}
+
+.employees-container .employee1:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.employees-container .employee2 {
+  background-color: #dacfc3;
+  color: black;
+  max-width: 30%;
+  padding: 0.5rem;
+  display: inline-block;
+}
+
+.employees-container .employee2:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.employees-container .employee3 {
+  background-color: #dacfc3;
+  color: black;
+  max-width: 30%;
+  padding: 0.5rem;
+  float: right;
+  margin-left: auto;
+}
+
+>>>>>>> hani-new
 .employees-container .employee3:after {
   content: "";
   display: block;
@@ -486,6 +640,11 @@ footer {
   clear: both;
 }
 
+.services-container p {
+  text-align: center;
+  padding: 2rem;
+}
+
 .services-container a:link {
   text-decoration: none;
   color: white;
@@ -517,10 +676,6 @@ footer {
   flex-wrap: wrap;
   width: 100%;
   text-align: center;
-}
-
-.desktop-usp div {
-  margin: .625rem;
 }
 
 .desktop-usp .uspar {
@@ -693,7 +848,11 @@ input[type=text], textarea {
     background-color: #88bccd;
   }
   footer {
+<<<<<<< HEAD
     font-size: 0.625rem;
+=======
+    font-size: 1rem;
+>>>>>>> hani-new
   }
   footer .foot-adress {
     display: none;
@@ -705,7 +864,11 @@ input[type=text], textarea {
 
 @media (min-width: 376px) and (max-width: 798px) {
   p {
+<<<<<<< HEAD
     font-size: 0.75rem;
+=======
+    font-size: 1.2rem;
+>>>>>>> hani-new
   }
   .slogan-cont {
     display: none;
@@ -735,7 +898,7 @@ input[type=text], textarea {
   }
   .assignment-backgrund .assignment-1 {
     width: 45%;
-    float: right;
+    float: left;
     padding-top: 20vh;
   }
   .assignment-backgrund .assignment-1 .assignment-picture {
@@ -767,6 +930,7 @@ input[type=text], textarea {
     padding: 2rem;
     padding-top: 20vh;
     background-color: #387284;
+    min-width: 33.33%;
     margin: 0;
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -784,6 +948,7 @@ input[type=text], textarea {
     padding: 2rem;
     padding-top: 20vh;
     background-color: #387284;
+    min-width: 33.33%;
     margin: 0;
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -801,6 +966,7 @@ input[type=text], textarea {
     padding: 2rem;
     padding-top: 20vh;
     background-color: #387284;
+    min-width: 33.33%;
     margin: 0;
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -812,8 +978,14 @@ input[type=text], textarea {
     clear: both;
   }
   .services-container .service {
-    width: 30%;
+    min-width: 30%;
     padding: 0;
+  }
+  .services-container .service h3 {
+    font-size: 120%;
+  }
+  .services-container .service p {
+    text-align: justify;
   }
   .topnav a {
     display: none;
@@ -862,41 +1034,75 @@ input[type=text], textarea {
     color: whitesmoke;
     text-decoration: none;
     text-align: center;
+<<<<<<< HEAD
     font-size: 0.5rem;
+=======
+    font-size: 0.7rem;
+>>>>>>> hani-new
     letter-spacing: 5px;
     text-shadow: 1px 1px #1f2a30;
     color: whitesmoke;
     text-decoration: none;
     text-align: center;
+<<<<<<< HEAD
     font-size: 0.5rem;
+=======
+    font-size: 0.7rem;
+>>>>>>> hani-new
     letter-spacing: 5px;
     text-shadow: 1px 1px #1f2a30;
     width: 30%;
   }
+<<<<<<< HEAD
   .foot-contact a {
     text-decoration: none;
     font-size: 0.625rem;
+=======
+  .foot-contact p {
+    font-size: 80%;
+  }
+  .foot-contact a {
+    text-decoration: none;
+    font-size: 80%;
+>>>>>>> hani-new
     color: rgba(115, 199, 203, 0.89);
   }
   .foot-contact a:visited {
     color: rgba(115, 199, 203, 0.89);
   }
   .foot-contact a:hover {
+<<<<<<< HEAD
     font-size: 1rem;
+=======
+    font-size: 120%;
+>>>>>>> hani-new
     -webkit-transition: all 400ms;
     -o-transition: all 400ms;
     transition: all 400ms;
   }
+<<<<<<< HEAD
   .foot-contact a {
     text-decoration: none;
     font-size: 0.625rem;
+=======
+  .foot-contact p {
+    font-size: 80%;
+  }
+  .foot-contact a {
+    text-decoration: none;
+    font-size: 80%;
+>>>>>>> hani-new
     color: rgba(115, 199, 203, 0.89);
   }
   .foot-contact a:visited {
     color: rgba(115, 199, 203, 0.89);
   }
   .foot-contact a:hover {
+<<<<<<< HEAD
     font-size: 1rem;
+=======
+    font-size: 120%;
+>>>>>>> hani-new
     -webkit-transition: all 400ms;
     -o-transition: all 400ms;
     transition: all 400ms;
@@ -906,6 +1112,12 @@ input[type=text], textarea {
     display: block;
     clear: both;
   }
+<<<<<<< HEAD
+=======
+  .foot-contact p {
+    font-size: 120%;
+  }
+>>>>>>> hani-new
   .foot-adress {
     float: right;
     width: 45%;
@@ -913,41 +1125,75 @@ input[type=text], textarea {
     color: whitesmoke;
     text-decoration: none;
     text-align: center;
+<<<<<<< HEAD
     font-size: 0.5rem;
+=======
+    font-size: 0.7rem;
+>>>>>>> hani-new
     letter-spacing: 5px;
     text-shadow: 1px 1px #1f2a30;
     color: whitesmoke;
     text-decoration: none;
     text-align: center;
+<<<<<<< HEAD
     font-size: 0.5rem;
+=======
+    font-size: 0.7rem;
+>>>>>>> hani-new
     letter-spacing: 5px;
     text-shadow: 1px 1px #1f2a30;
     width: 30%;
   }
+<<<<<<< HEAD
   .foot-adress a {
     text-decoration: none;
     font-size: 0.625rem;
+=======
+  .foot-adress p {
+    font-size: 80%;
+  }
+  .foot-adress a {
+    text-decoration: none;
+    font-size: 80%;
+>>>>>>> hani-new
     color: rgba(115, 199, 203, 0.89);
   }
   .foot-adress a:visited {
     color: rgba(115, 199, 203, 0.89);
   }
   .foot-adress a:hover {
+<<<<<<< HEAD
     font-size: 1rem;
+=======
+    font-size: 120%;
+>>>>>>> hani-new
     -webkit-transition: all 400ms;
     -o-transition: all 400ms;
     transition: all 400ms;
   }
+<<<<<<< HEAD
   .foot-adress a {
     text-decoration: none;
     font-size: 0.625rem;
+=======
+  .foot-adress p {
+    font-size: 80%;
+  }
+  .foot-adress a {
+    text-decoration: none;
+    font-size: 80%;
+>>>>>>> hani-new
     color: rgba(115, 199, 203, 0.89);
   }
   .foot-adress a:visited {
     color: rgba(115, 199, 203, 0.89);
   }
   .foot-adress a:hover {
+<<<<<<< HEAD
     font-size: 1rem;
+=======
+    font-size: 120%;
+>>>>>>> hani-new
     -webkit-transition: all 400ms;
     -o-transition: all 400ms;
     transition: all 400ms;
@@ -957,6 +1203,12 @@ input[type=text], textarea {
     display: block;
     clear: both;
   }
+<<<<<<< HEAD
+=======
+  .foot-adress p {
+    font-size: 120%;
+  }
+>>>>>>> hani-new
   .foot-follow {
     float: right;
     width: 45%;
@@ -964,41 +1216,75 @@ input[type=text], textarea {
     color: whitesmoke;
     text-decoration: none;
     text-align: center;
+<<<<<<< HEAD
     font-size: 0.5rem;
+=======
+    font-size: 0.7rem;
+>>>>>>> hani-new
     letter-spacing: 5px;
     text-shadow: 1px 1px #1f2a30;
     color: whitesmoke;
     text-decoration: none;
     text-align: center;
+<<<<<<< HEAD
     font-size: 0.5rem;
+=======
+    font-size: 0.7rem;
+>>>>>>> hani-new
     letter-spacing: 5px;
     text-shadow: 1px 1px #1f2a30;
     width: 30%;
   }
+<<<<<<< HEAD
   .foot-follow a {
     text-decoration: none;
     font-size: 0.625rem;
+=======
+  .foot-follow p {
+    font-size: 80%;
+  }
+  .foot-follow a {
+    text-decoration: none;
+    font-size: 80%;
+>>>>>>> hani-new
     color: rgba(115, 199, 203, 0.89);
   }
   .foot-follow a:visited {
     color: rgba(115, 199, 203, 0.89);
   }
   .foot-follow a:hover {
+<<<<<<< HEAD
     font-size: 1rem;
+=======
+    font-size: 120%;
+>>>>>>> hani-new
     -webkit-transition: all 400ms;
     -o-transition: all 400ms;
     transition: all 400ms;
   }
+<<<<<<< HEAD
   .foot-follow a {
     text-decoration: none;
     font-size: 0.625rem;
+=======
+  .foot-follow p {
+    font-size: 80%;
+  }
+  .foot-follow a {
+    text-decoration: none;
+    font-size: 80%;
+>>>>>>> hani-new
     color: rgba(115, 199, 203, 0.89);
   }
   .foot-follow a:visited {
     color: rgba(115, 199, 203, 0.89);
   }
   .foot-follow a:hover {
+<<<<<<< HEAD
     font-size: 1rem;
+=======
+    font-size: 120%;
+>>>>>>> hani-new
     -webkit-transition: all 400ms;
     -o-transition: all 400ms;
     transition: all 400ms;
@@ -1008,11 +1294,18 @@ input[type=text], textarea {
     display: block;
     clear: both;
   }
+<<<<<<< HEAD
+=======
+  .foot-follow p {
+    font-size: 120%;
+  }
+>>>>>>> hani-new
 }
 
 @media (min-width: 799px) {
+  /* Jag har ingen aning om vad tanken här är med alla flex attribut och det är för mycket att fixa, fråga Robert */
   p {
-    font-size: 0.75rem;
+    font-size: 1.3rem;
   }
   h1, h2, h3 {
     text-transform: uppercase;
@@ -1032,7 +1325,9 @@ input[type=text], textarea {
   }
   .home-container {
     background-image: url(../logos/waves_desktop_logo_600.png);
+    font-weight: bold;
   }
+  /* Jag har ingen aning om vad tanken här är med alla flex attribut och det är för mycket att fixa, fråga Robert */
   .assignment-container {
     background: none;
     padding: 0;
@@ -1126,7 +1421,11 @@ input[type=text], textarea {
     background-color: #387284;
     margin: 0;
     padding: 1rem;
+<<<<<<< HEAD
     width: 33%;
+=======
+    min-width: 33%;
+>>>>>>> hani-new
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -1146,7 +1445,7 @@ input[type=text], textarea {
     padding-top: 20vh;
     background-color: #387284;
     margin: 0;
-    width: 33%;
+    min-width: 33%;
     padding: 1rem;
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -1167,7 +1466,7 @@ input[type=text], textarea {
     padding-top: 20vh;
     background-color: #387284;
     margin: 0;
-    width: 33%;
+    min-width: 33%;
     padding: 1rem;
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -1198,8 +1497,13 @@ input[type=text], textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
+<<<<<<< HEAD
     display: flex;
     display: flex;
+=======
+    display: flex;
+    display: flex;
+>>>>>>> hani-new
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -1234,41 +1538,75 @@ input[type=text], textarea {
     color: whitesmoke;
     text-decoration: none;
     text-align: center;
+<<<<<<< HEAD
     font-size: 0.5rem;
+=======
+    font-size: 0.7rem;
+>>>>>>> hani-new
     letter-spacing: 5px;
     text-shadow: 1px 1px #1f2a30;
     color: whitesmoke;
     text-decoration: none;
     text-align: center;
+<<<<<<< HEAD
     font-size: 0.5rem;
+=======
+    font-size: 0.7rem;
+>>>>>>> hani-new
     letter-spacing: 5px;
     text-shadow: 1px 1px #1f2a30;
     width: 30%;
   }
+<<<<<<< HEAD
   .foot-contact a {
     text-decoration: none;
     font-size: 0.625rem;
+=======
+  .foot-contact p {
+    font-size: 80%;
+  }
+  .foot-contact a {
+    text-decoration: none;
+    font-size: 80%;
+>>>>>>> hani-new
     color: rgba(115, 199, 203, 0.89);
   }
   .foot-contact a:visited {
     color: rgba(115, 199, 203, 0.89);
   }
   .foot-contact a:hover {
+<<<<<<< HEAD
     font-size: 1rem;
+=======
+    font-size: 120%;
+>>>>>>> hani-new
     -webkit-transition: all 400ms;
     -o-transition: all 400ms;
     transition: all 400ms;
   }
+<<<<<<< HEAD
   .foot-contact a {
     text-decoration: none;
     font-size: 0.625rem;
+=======
+  .foot-contact p {
+    font-size: 80%;
+  }
+  .foot-contact a {
+    text-decoration: none;
+    font-size: 80%;
+>>>>>>> hani-new
     color: rgba(115, 199, 203, 0.89);
   }
   .foot-contact a:visited {
     color: rgba(115, 199, 203, 0.89);
   }
   .foot-contact a:hover {
+<<<<<<< HEAD
     font-size: 1rem;
+=======
+    font-size: 120%;
+>>>>>>> hani-new
     -webkit-transition: all 400ms;
     -o-transition: all 400ms;
     transition: all 400ms;
@@ -1278,6 +1616,18 @@ input[type=text], textarea {
     display: block;
     clear: both;
   }
+<<<<<<< HEAD
+=======
+  .foot-contact p {
+    font-size: 120%;
+  }
+  .foot-contact a {
+    font-size: 120%;
+  }
+  .foot-contact a:hover {
+    font-size: 180%;
+  }
+>>>>>>> hani-new
   .foot-adress {
     float: right;
     width: 45%;
@@ -1285,41 +1635,75 @@ input[type=text], textarea {
     color: whitesmoke;
     text-decoration: none;
     text-align: center;
+<<<<<<< HEAD
     font-size: 0.5rem;
+=======
+    font-size: 0.7rem;
+>>>>>>> hani-new
     letter-spacing: 5px;
     text-shadow: 1px 1px #1f2a30;
     color: whitesmoke;
     text-decoration: none;
     text-align: center;
+<<<<<<< HEAD
     font-size: 0.5rem;
+=======
+    font-size: 0.7rem;
+>>>>>>> hani-new
     letter-spacing: 5px;
     text-shadow: 1px 1px #1f2a30;
     width: 30%;
   }
+<<<<<<< HEAD
   .foot-adress a {
     text-decoration: none;
     font-size: 0.625rem;
+=======
+  .foot-adress p {
+    font-size: 80%;
+  }
+  .foot-adress a {
+    text-decoration: none;
+    font-size: 80%;
+>>>>>>> hani-new
     color: rgba(115, 199, 203, 0.89);
   }
   .foot-adress a:visited {
     color: rgba(115, 199, 203, 0.89);
   }
   .foot-adress a:hover {
+<<<<<<< HEAD
     font-size: 1rem;
+=======
+    font-size: 120%;
+>>>>>>> hani-new
     -webkit-transition: all 400ms;
     -o-transition: all 400ms;
     transition: all 400ms;
   }
+<<<<<<< HEAD
   .foot-adress a {
     text-decoration: none;
     font-size: 0.625rem;
+=======
+  .foot-adress p {
+    font-size: 80%;
+  }
+  .foot-adress a {
+    text-decoration: none;
+    font-size: 80%;
+>>>>>>> hani-new
     color: rgba(115, 199, 203, 0.89);
   }
   .foot-adress a:visited {
     color: rgba(115, 199, 203, 0.89);
   }
   .foot-adress a:hover {
+<<<<<<< HEAD
     font-size: 1rem;
+=======
+    font-size: 120%;
+>>>>>>> hani-new
     -webkit-transition: all 400ms;
     -o-transition: all 400ms;
     transition: all 400ms;
@@ -1329,6 +1713,18 @@ input[type=text], textarea {
     display: block;
     clear: both;
   }
+<<<<<<< HEAD
+=======
+  .foot-adress p {
+    font-size: 120%;
+  }
+  .foot-adress a {
+    font-size: 120%;
+  }
+  .foot-adress a:hover {
+    font-size: 180%;
+  }
+>>>>>>> hani-new
   .foot-follow {
     float: right;
     width: 45%;
@@ -1336,41 +1732,75 @@ input[type=text], textarea {
     color: whitesmoke;
     text-decoration: none;
     text-align: center;
+<<<<<<< HEAD
     font-size: 0.5rem;
+=======
+    font-size: 0.7rem;
+>>>>>>> hani-new
     letter-spacing: 5px;
     text-shadow: 1px 1px #1f2a30;
     color: whitesmoke;
     text-decoration: none;
     text-align: center;
+<<<<<<< HEAD
     font-size: 0.5rem;
+=======
+    font-size: 0.7rem;
+>>>>>>> hani-new
     letter-spacing: 5px;
     text-shadow: 1px 1px #1f2a30;
     width: 30%;
   }
+<<<<<<< HEAD
   .foot-follow a {
     text-decoration: none;
     font-size: 0.625rem;
+=======
+  .foot-follow p {
+    font-size: 80%;
+  }
+  .foot-follow a {
+    text-decoration: none;
+    font-size: 80%;
+>>>>>>> hani-new
     color: rgba(115, 199, 203, 0.89);
   }
   .foot-follow a:visited {
     color: rgba(115, 199, 203, 0.89);
   }
   .foot-follow a:hover {
+<<<<<<< HEAD
     font-size: 1rem;
+=======
+    font-size: 120%;
+>>>>>>> hani-new
     -webkit-transition: all 400ms;
     -o-transition: all 400ms;
     transition: all 400ms;
   }
+<<<<<<< HEAD
   .foot-follow a {
     text-decoration: none;
     font-size: 0.625rem;
+=======
+  .foot-follow p {
+    font-size: 80%;
+  }
+  .foot-follow a {
+    text-decoration: none;
+    font-size: 80%;
+>>>>>>> hani-new
     color: rgba(115, 199, 203, 0.89);
   }
   .foot-follow a:visited {
     color: rgba(115, 199, 203, 0.89);
   }
   .foot-follow a:hover {
+<<<<<<< HEAD
     font-size: 1rem;
+=======
+    font-size: 120%;
+>>>>>>> hani-new
     -webkit-transition: all 400ms;
     -o-transition: all 400ms;
     transition: all 400ms;
@@ -1380,4 +1810,16 @@ input[type=text], textarea {
     display: block;
     clear: both;
   }
+<<<<<<< HEAD
+=======
+  .foot-follow p {
+    font-size: 120%;
+  }
+  .foot-follow a {
+    font-size: 120%;
+  }
+  .foot-follow a:hover {
+    font-size: 180%;
+  }
+>>>>>>> hani-new
 }

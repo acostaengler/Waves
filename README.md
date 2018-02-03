@@ -20,9 +20,12 @@ We take care of our customers online wishes, targeting mainly small to medium co
 ## Services
 We offer a full package regarding name branding, slogans and design profile, and implementing them on their new and improved website, with attracting more customers in mind first hand. 
 
+<<<<<<< HEAD
 ## Services
 We offer a full package regarding name branding, slogans and design profile, and implementing them on their new and improved website, with attracting more customers in mind first hand. 
 
+=======
+>>>>>>> hani-new
 ### Mobile, Tablet and Desktop
 * Adjusted to perfection on all digital devices. 
 
@@ -37,7 +40,3 @@ We offer a full package regarding name branding, slogans and design profile, and
 
 ### Screenshot mobile
 ![screenshot-m](https://user-images.githubusercontent.com/31956031/35618886-9129d102-067c-11e8-9b15-a9847edb1965.jpeg)
-
-### Live page
-https://github.com/acostaengler/waves/
-
