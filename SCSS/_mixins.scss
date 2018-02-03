@@ -9,6 +9,9 @@
     flex-wrap: wrap;
     width: 100%;
     text-align: center;
+    div{
+        margin: 0.3rem;
+    }
 }
 
 @mixin flex-column {
