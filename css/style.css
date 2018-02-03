@@ -356,6 +356,7 @@ footer {
 
 .employees-container {
   display: block;
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -49,6 +49,7 @@
 
 .employees-container{   
     display: block;
+    padding: 10px;
     @include flex-container;
     .employee1 {
         @include employees;
