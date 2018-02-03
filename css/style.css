@@ -372,17 +372,6 @@ footer {
   padding: 1.5rem;
 }
 
-.about-us-container h1 {
-  float: left;
-  min-width: 100%;
-}
-
-.about-us-container h1:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
 .about-us-container a {
   color: black;
 }
@@ -396,7 +385,7 @@ footer {
 }
 
 .employees-container {
-  display: inline-block;
+  display: block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -407,17 +396,15 @@ footer {
   flex-wrap: wrap;
   width: 100%;
   text-align: center;
-  max-width: 100vw;
-  background-color: #387284;
-  color: #dacfc3;
 }
 
 .employees-container .employee1 {
   background-color: #dacfc3;
   color: black;
-  float: left;
   max-width: 30%;
   padding: 0.5rem;
+  float: left;
+  margin-right: auto;
 }
 
 .employees-container .employee1:after {
@@ -429,9 +416,9 @@ footer {
 .employees-container .employee2 {
   background-color: #dacfc3;
   color: black;
-  display: inline-block;
   max-width: 30%;
   padding: 0.5rem;
+  display: inline-block;
 }
 
 .employees-container .employee2:after {
@@ -441,11 +428,12 @@ footer {
 }
 
 .employees-container .employee3 {
-  float: right;
   background-color: #dacfc3;
   color: black;
   max-width: 30%;
   padding: 0.5rem;
+  float: right;
+  margin-left: auto;
 }
 
 .employees-container .employee3:after {
@@ -802,6 +790,9 @@ input[type=text], textarea {
     background-color: #387284;
     min-width: 33.33%;
     margin: 0;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
   }
   .services-container .usp11:after {
     content: "";
@@ -817,6 +808,9 @@ input[type=text], textarea {
     background-color: #387284;
     min-width: 33.33%;
     margin: 0;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
   }
   .services-container .usp22:after {
     content: "";
@@ -832,6 +826,9 @@ input[type=text], textarea {
     background-color: #387284;
     min-width: 33.33%;
     margin: 0;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
   }
   .services-container .usp33:after {
     content: "";
@@ -1079,8 +1076,6 @@ input[type=text], textarea {
     text-transform: uppercase;
   }
   .about-us-container {
-    display: block;
-    min-width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1089,30 +1084,9 @@ input[type=text], textarea {
     -ms-flex-flow: column wrap;
     flex-flow: column wrap;
   }
-  .about-us-container h1 {
-    float: left;
-    min-width: 100%;
-  }
-  .about-us-container h2 {
-    float: left;
-    min-width: 100%;
-  }
-  .about-us-container h2:after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-  .about-us-container .about-box {
-    float: left;
-    min-width: 50%;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
-  }
-  .about-us-container .about-box:after {
-    content: "";
-    display: block;
-    clear: both;
+  .about-us-container .employees-container {
+    max-width: 60vw;
+    margin: 0 auto;
   }
   .home-container {
     background-image: url(../logos/waves_desktop_logo_600.png);
