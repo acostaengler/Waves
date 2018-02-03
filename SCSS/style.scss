@@ -1,5 +1,4 @@
 
-
 // In this 'final' scss-file, in sass we split up the code
 // into partials to manage it more easily. 
 
@@ -35,11 +34,7 @@
     min-height: 100vh;
     min-width: 100vw;
     text-align: center;
-    h1{
-        float: left;
-        min-width: 100%;
-        @include clearfix; 
-    }
+    padding: 1.5rem;
     a{
         color: black;
     &:hover{
@@ -47,7 +42,6 @@
         }
     }
     .about-box{
-        padding: 0 2rem;
         text-align: justify;
     }
 }
@@ -55,18 +49,23 @@
 .employees-container{   
     display: block;
     @include flex-container;
-    min-width: 100vw;
-    background-color: $primary-color2;
-    color: $primary-color;
-    padding: 1rem;
-    div {
-        background-color: $primary-color;
-        color: black;
+    .employee1 {
+        @include employees;
         float: left;
-        padding: 0.5rem;
-        max-width: 30%;
+        margin-right: auto;
         @include clearfix;
-        margin: 3px;
+    }
+    .employee2{
+        @include employees;
+        display: inline-block;
+        @include clearfix;
+        
+    }
+    .employee3{
+        @include employees;
+        float: right;
+        margin-left: auto;
+        @include clearfix;  
     }
 }
 
@@ -86,6 +85,7 @@
     }
     p{
         text-align: justify;
+        
     }
 }
 
@@ -104,6 +104,10 @@
         min-width: 100%;
         color:white;
         @include clearfix;
+    }
+    p{
+        text-align: center;
+        padding: 2rem;
     }
     a:link {
         text-decoration: none;
@@ -306,15 +310,16 @@ p{
     .assignment {
         width: 45%;
         float: left;
-        padding-top: 20vh;
+        padding-top: 20vh; // ???????????
     .assignment-picture{
+        padding: $padding;
        
           }
         }
     .assignment-1 {
         width: 45%;
-        float: right; 
-        padding-top: 20vh;
+        float: left; 
+        padding-top: 20vh; // ??????????????
     .assignment-picture{
          padding: $padding;
         }
@@ -336,11 +341,13 @@ p{
         -ms-flex:3;
         flex:3;
         width: 100%
+
     }
     .usp11{
         @include usp-float;
         background-color:$primary-color2;
-        margin: 0;
+        min-width: 33.33%;
+        margin:0;
         -webkit-box-flex:1;
         -ms-flex:1;
         flex:1;
@@ -348,6 +355,7 @@ p{
     .usp22{
         @include usp-float;
         background-color:$primary-color2;
+        min-width: 33.33%;
         margin: 0;
         -webkit-box-flex:1;
         -ms-flex:1;
@@ -356,14 +364,21 @@ p{
     .usp33{
         @include usp-float;
         background-color:$primary-color2; 
+        min-width: 33.33%;
         margin: 0;
         -webkit-box-flex:1;
         -ms-flex:1;
         flex:1;    
     }
     .service{
-        width: 30%;
+        min-width: 30%;
         padding: 0;
+        h3{
+            font-size: 120%;
+        }
+        p{
+            text-align: justify;
+        }
     }
 }
 
@@ -409,6 +424,9 @@ p{
     @include footer-shared-flex;
     width: 30%;
     @include clearfix;
+    p{
+        font-size: 120%;
+    }
     }
     
 .foot-adress{
@@ -416,6 +434,9 @@ p{
     @include footer-shared-flex;
     width: 30%;
     @include clearfix;
+    p{
+        font-size: 120%;
+    }
     }
     
 .foot-follow{
@@ -423,11 +444,16 @@ p{
     @include footer-shared-flex;
     width: 30%;
     @include clearfix;
+    p{
+        font-size: 120%;
+    }
     }
 }   
 
 // MEDIA QUERY DESKTOP
 @media #{$width-desktop}{
+
+    /* Jag har ingen aning om vad tanken här är med alla flex attribut och det är för mycket att fixa, fråga Robert */
 
 p{
     font-size: $fontsize-desk;
@@ -438,18 +464,18 @@ h1, h2, h3{
     }
 
 .about-us-container{ 
-    @include flex-column;
-    .about-box{
-        width: 50%;
-        -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    } 
+     @include flex-column;
+    .employees-container{
+        max-width: 60vw;
+        margin: 0 auto;
+    }
 }
     
 .home-container{
     background-image: $waves-desk-small;
+    font-weight: bold;
 }
+  /* Jag har ingen aning om vad tanken här är med alla flex attribut och det är för mycket att fixa, fråga Robert */
 
 .assignment-container{
     background: none;
@@ -526,7 +552,7 @@ h1, h2, h3{
         background-color:$primary-color2;
         margin: 0;
         padding: 1rem;
-        width: 33%;
+        min-width: 33%;
         -webkit-box-flex:1;
         -ms-flex:1;
         flex:1;
@@ -537,7 +563,7 @@ h1, h2, h3{
         @include usp-float;
         background-color:$primary-color2;
         margin: 0;
-        width: 33%;
+        min-width: 33%;
         padding: 1rem;
         -webkit-box-flex:1;
         -ms-flex:1;
@@ -549,16 +575,18 @@ h1, h2, h3{
         @include usp-float;
         background-color:$primary-color2; 
         margin: 0;
-        width: 33%; 
+        min-width: 33%; 
         padding: 1rem; 
         -webkit-box-flex:1; 
         -ms-flex:1; 
         flex:1;   
         -ms-flex-item-align:end;   
         align-self:flex-end; 
-    }          
+    }
+  
    
 }
+
 
 .usp-picture{
     background-color:$primary-color2;    
@@ -607,6 +635,15 @@ textarea {
     @include footer-shared-flex;
     width: 30%;
     @include clearfix;
+    p{
+        font-size: 120%;
+    }
+    a{
+        font-size: 120%;
+        &:hover{
+            font-size:180%;
+        }
+    }
 }
     
 .foot-adress{
@@ -614,6 +651,16 @@ textarea {
     @include footer-shared-flex;
     width: 30%;
     @include clearfix;
+    p{
+        font-size: 120%;
+    }
+    a{
+        font-size: 120%;
+        &:hover{
+            font-size:180%;
+        }
+    }
+    
 }
     
 .foot-follow{
@@ -621,6 +668,15 @@ textarea {
     @include footer-shared-flex;
     width: 30%;
     @include clearfix;
+    p{
+        font-size: 120%;
+    }
+    a{
+        font-size: 120%;
+        &:hover{
+            font-size:180%;
+        }
+    }
 }
 }
 

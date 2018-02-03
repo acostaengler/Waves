@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -314,10 +315,6 @@ footer {
   background-size: auto, cover;
 }
 
-.home-container div {
-  margin: .625rem;
-}
-
 .about-us-container {
   display: inline-block;
   display: -webkit-box;
@@ -335,21 +332,7 @@ footer {
   min-height: 100vh;
   min-width: 100vw;
   text-align: center;
-}
-
-.about-us-container div {
-  margin: .625rem;
-}
-
-.about-us-container h1 {
-  float: left;
-  min-width: 100%;
-}
-
-.about-us-container h1:after {
-  content: "";
-  display: block;
-  clear: both;
+  padding: 1.5rem;
 }
 
 .about-us-container a {
@@ -361,7 +344,6 @@ footer {
 }
 
 .about-us-container .about-box {
-  padding: 0 2rem;
   text-align: justify;
 }
 
@@ -377,26 +359,47 @@ footer {
   flex-wrap: wrap;
   width: 100%;
   text-align: center;
-  min-width: 100vw;
-  background-color: #387284;
-  color: #dacfc3;
-  padding: 1rem;
 }
 
-.employees-container div {
-  margin: .625rem;
-}
-
-.employees-container div {
+.employees-container .employee1 {
   background-color: #dacfc3;
   color: black;
-  float: left;
-  padding: 0.5rem;
   max-width: 30%;
-  margin: 3px;
+  padding: 0.5rem;
+  float: left;
+  margin-right: auto;
 }
 
-.employees-container div:after {
+.employees-container .employee1:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.employees-container .employee2 {
+  background-color: #dacfc3;
+  color: black;
+  max-width: 30%;
+  padding: 0.5rem;
+  display: inline-block;
+}
+
+.employees-container .employee2:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.employees-container .employee3 {
+  background-color: #dacfc3;
+  color: black;
+  max-width: 30%;
+  padding: 0.5rem;
+  float: right;
+  margin-left: auto;
+}
+
+.employees-container .employee3:after {
   content: "";
   display: block;
   clear: both;
@@ -419,10 +422,6 @@ footer {
   background-color: #dacfc3;
   color: black;
   text-align: center;
-}
-
-.assignment-container div {
-  margin: .625rem;
 }
 
 .assignment-container .assignment, .assignment-container .assignment-1 {
@@ -455,10 +454,6 @@ footer {
   background-color: #387284;
 }
 
-.services-container div {
-  margin: .625rem;
-}
-
 .services-container header {
   float: right;
   min-width: 100%;
@@ -469,6 +464,11 @@ footer {
   content: "";
   display: block;
   clear: both;
+}
+
+.services-container p {
+  text-align: center;
+  padding: 2rem;
 }
 
 .services-container a:link {
@@ -502,10 +502,6 @@ footer {
   flex-wrap: wrap;
   width: 100%;
   text-align: center;
-}
-
-.desktop-usp div {
-  margin: .625rem;
 }
 
 .desktop-usp .uspar {
@@ -718,9 +714,12 @@ input[type=text], textarea {
     float: left;
     padding-top: 20vh;
   }
+  .assignment-backgrund .assignment .assignment-picture {
+    padding: 2rem;
+  }
   .assignment-backgrund .assignment-1 {
     width: 45%;
-    float: right;
+    float: left;
     padding-top: 20vh;
   }
   .assignment-backgrund .assignment-1 .assignment-picture {
@@ -752,6 +751,7 @@ input[type=text], textarea {
     padding: 2rem;
     padding-top: 20vh;
     background-color: #387284;
+    min-width: 33.33%;
     margin: 0;
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -769,6 +769,7 @@ input[type=text], textarea {
     padding: 2rem;
     padding-top: 20vh;
     background-color: #387284;
+    min-width: 33.33%;
     margin: 0;
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -786,6 +787,7 @@ input[type=text], textarea {
     padding: 2rem;
     padding-top: 20vh;
     background-color: #387284;
+    min-width: 33.33%;
     margin: 0;
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -797,8 +799,14 @@ input[type=text], textarea {
     clear: both;
   }
   .services-container .service {
-    width: 30%;
+    min-width: 30%;
     padding: 0;
+  }
+  .services-container .service h3 {
+    font-size: 120%;
+  }
+  .services-container .service p {
+    text-align: justify;
   }
   .topnav a {
     display: none;
@@ -891,6 +899,9 @@ input[type=text], textarea {
     display: block;
     clear: both;
   }
+  .foot-contact p {
+    font-size: 120%;
+  }
   .foot-adress {
     float: right;
     width: 45%;
@@ -941,6 +952,9 @@ input[type=text], textarea {
     content: "";
     display: block;
     clear: both;
+  }
+  .foot-adress p {
+    font-size: 120%;
   }
   .foot-follow {
     float: right;
@@ -993,9 +1007,13 @@ input[type=text], textarea {
     display: block;
     clear: both;
   }
+  .foot-follow p {
+    font-size: 120%;
+  }
 }
 
 @media (min-width: 799px) {
+  /* Jag har ingen aning om vad tanken här är med alla flex attribut och det är för mycket att fixa, fråga Robert */
   p {
     font-size: 0.75rem;
   }
@@ -1011,15 +1029,15 @@ input[type=text], textarea {
     -ms-flex-flow: column wrap;
     flex-flow: column wrap;
   }
-  .about-us-container .about-box {
-    width: 50%;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
+  .about-us-container .employees-container {
+    max-width: 60vw;
+    margin: 0 auto;
   }
   .home-container {
     background-image: url(../logos/waves_desktop_logo_600.png);
+    font-weight: bold;
   }
+  /* Jag har ingen aning om vad tanken här är med alla flex attribut och det är för mycket att fixa, fråga Robert */
   .assignment-container {
     background: none;
     padding: 0;
@@ -1113,7 +1131,7 @@ input[type=text], textarea {
     background-color: #387284;
     margin: 0;
     padding: 1rem;
-    width: 33%;
+    min-width: 33%;
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -1133,7 +1151,7 @@ input[type=text], textarea {
     padding-top: 20vh;
     background-color: #387284;
     margin: 0;
-    width: 33%;
+    min-width: 33%;
     padding: 1rem;
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -1154,7 +1172,7 @@ input[type=text], textarea {
     padding-top: 20vh;
     background-color: #387284;
     margin: 0;
-    width: 33%;
+    min-width: 33%;
     padding: 1rem;
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -1265,6 +1283,15 @@ input[type=text], textarea {
     display: block;
     clear: both;
   }
+  .foot-contact p {
+    font-size: 120%;
+  }
+  .foot-contact a {
+    font-size: 120%;
+  }
+  .foot-contact a:hover {
+    font-size: 180%;
+  }
   .foot-adress {
     float: right;
     width: 45%;
@@ -1316,6 +1343,15 @@ input[type=text], textarea {
     display: block;
     clear: both;
   }
+  .foot-adress p {
+    font-size: 120%;
+  }
+  .foot-adress a {
+    font-size: 120%;
+  }
+  .foot-adress a:hover {
+    font-size: 180%;
+  }
   .foot-follow {
     float: right;
     width: 45%;
@@ -1366,5 +1402,14 @@ input[type=text], textarea {
     content: "";
     display: block;
     clear: both;
+  }
+  .foot-follow p {
+    font-size: 120%;
+  }
+  .foot-follow a {
+    font-size: 120%;
+  }
+  .foot-follow a:hover {
+    font-size: 180%;
   }
 }
