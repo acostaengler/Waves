@@ -709,6 +709,7 @@ input[type=text], textarea {
     color: black;
   }
   .topnav.responsive {
+    display: block;
     position: fixed;
     background-color: #dacfc3;
     -webkit-box-orient: vertical;

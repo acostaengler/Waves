@@ -246,6 +246,7 @@ input[type=text], textarea {
 }
 
 .topnav.responsive { 
+    display: block;
     position: fixed;
     background-color: $primary-color;
     -webkit-box-orient:vertical;
