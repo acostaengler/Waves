@@ -1100,6 +1100,7 @@ input[type=text], textarea {
     text-transform: uppercase;
   }
   .topnav {
+    display: inline-block;
     float: left;
   }
   .about-us-container {
