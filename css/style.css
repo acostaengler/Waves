@@ -378,6 +378,7 @@ footer {
   max-width: 30%;
   padding: 0.5rem;
   float: left;
+  margin-right: auto;
 }
 
 .employees-container .employee1:after {
@@ -406,6 +407,7 @@ footer {
   max-width: 30%;
   padding: 0.5rem;
   float: right;
+  margin-left: auto;
 }
 
 .employees-container .employee3:after {
