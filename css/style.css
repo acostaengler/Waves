@@ -710,7 +710,6 @@ input[type=text], textarea {
   }
   .topnav.responsive {
     display: block;
-    float: left;
     position: fixed;
     background-color: #dacfc3;
     -webkit-box-orient: vertical;
@@ -1099,6 +1098,9 @@ input[type=text], textarea {
   }
   h1, h2, h3 {
     text-transform: uppercase;
+  }
+  .topnav {
+    float: left;
   }
   .about-us-container {
     display: -webkit-box;

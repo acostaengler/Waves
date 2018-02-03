@@ -247,7 +247,6 @@ input[type=text], textarea {
 
 .topnav.responsive { 
     display: block;
-    float: left;
     position: fixed;
     background-color: $primary-color;
     -webkit-box-orient:vertical;
@@ -463,7 +462,9 @@ p{
 h1, h2, h3{
     text-transform: uppercase;
     }
-
+.topnav{
+    float: left;
+}
 .about-us-container{ 
      @include flex-column;
     .employees-container{
