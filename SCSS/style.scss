@@ -53,7 +53,6 @@
     .employee1 {
         @include employees;
         float: left;
-        margin-right: auto;
         @include clearfix;
     }
     .employee2{
@@ -64,7 +63,6 @@
     .employee3{
         @include employees;
         float: right;
-        margin-left: auto;
         @include clearfix;  
     }
 }
