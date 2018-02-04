@@ -1,11 +1,9 @@
-@import 'variabel';
-
 body{
     font-family: 'Playfair Display', serif; //This is our font via Google CDN
 }
 
 .parallax {
-    background:$startpic;
+    background: url(../images/waves_para_desktop.jpg) no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
 }

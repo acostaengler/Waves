@@ -18,7 +18,7 @@
     display: block;
     @include flex-container;
     min-width: 100%;
-    background-image: $waves-icon;
+    background-image: $waves-icon ,$start-pic;
     min-height: 80vh;
     background-repeat: no-repeat,no-repeat;
     background-position: 50% 50%;
@@ -310,7 +310,7 @@ p{
     .assignment {
         width: 45%;
         float: left;
-        padding-top: 20vh; 
+        padding-top: 20vh; // ???????????
     .assignment-picture{
         padding: $padding;
        
@@ -319,7 +319,7 @@ p{
     .assignment-1 {
         width: 45%;
         float: left; 
-        padding-top: 20vh;
+        padding-top: 20vh; // ??????????????
     .assignment-picture{
          padding: $padding;
         }
@@ -341,10 +341,8 @@ p{
         -ms-flex:3;
         flex:3;
         width: 100%
+
     }
-    p{
-        text-align: left;
-    }  
     .usp11{
         @include usp-float;
         background-color:$primary-color2;
