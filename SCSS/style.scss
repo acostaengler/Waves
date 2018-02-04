@@ -18,7 +18,7 @@
     display: block;
     @include flex-container;
     min-width: 100%;
-    background-image: $waves-icon ,$start-pic;
+    background-image: $waves-icon;
     min-height: 80vh;
     background-repeat: no-repeat,no-repeat;
     background-position: 50% 50%;
@@ -48,25 +48,26 @@
 
 .employees-container{   
     display: block;
-    padding: 10px;
     @include flex-container;
     .employee1 {
         @include employees;
         float: left;
+        margin-right: auto;
         @include clearfix;
     }
     .employee2{
         @include employees;
         display: inline-block;
-        @include clearfix;       
+        @include clearfix;
+        
     }
     .employee3{
         @include employees;
         float: right;
+        margin-left: auto;
         @include clearfix;  
     }
 }
-
 
 // UPPDRAG
 .assignment-container {
@@ -93,7 +94,7 @@
     min-height: 100vh;
     min-width: 100vw;
     display: block;
-    //@include flex-container;
+    @include flex-container;
     text-align: center;
     background-color: $primary-color2;
     @include padding-bot;
@@ -246,7 +247,6 @@ input[type=text], textarea {
 }
 
 .topnav.responsive { 
-    display: block;
     position: fixed;
     background-color: $primary-color;
     -webkit-box-orient:vertical;
@@ -310,7 +310,7 @@ p{
     .assignment {
         width: 45%;
         float: left;
-        padding-top: 20vh; // ???????????
+        padding-top: 20vh; 
     .assignment-picture{
         padding: $padding;
        
@@ -319,7 +319,7 @@ p{
     .assignment-1 {
         width: 45%;
         float: left; 
-        padding-top: 20vh; // ??????????????
+        padding-top: 20vh;
     .assignment-picture{
          padding: $padding;
         }
@@ -341,8 +341,10 @@ p{
         -ms-flex:3;
         flex:3;
         width: 100%
-
     }
+    p{
+        text-align: left;
+    }  
     .usp11{
         @include usp-float;
         background-color:$primary-color2;
@@ -552,7 +554,7 @@ h1, h2, h3{
         background-color:$primary-color2;
         margin: 0;
         padding: 1rem;
-        width: 33%;
+        min-width: 33%;
         -webkit-box-flex:1;
         -ms-flex:1;
         flex:1;
@@ -563,7 +565,7 @@ h1, h2, h3{
         @include usp-float;
         background-color:$primary-color2;
         margin: 0;
-        width: 33%;
+        min-width: 33%;
         padding: 1rem;
         -webkit-box-flex:1;
         -ms-flex:1;
@@ -575,7 +577,7 @@ h1, h2, h3{
         @include usp-float;
         background-color:$primary-color2; 
         margin: 0;
-        width: 33%; 
+        min-width: 33%; 
         padding: 1rem; 
         -webkit-box-flex:1; 
         -ms-flex:1; 
@@ -679,5 +681,6 @@ textarea {
     }
 }
 }
+
 
 
