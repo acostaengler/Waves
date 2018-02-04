@@ -18,7 +18,7 @@
     display: block;
     @include flex-container;
     min-width: 100%;
-    background-image: $waves-icon ,$start-pic;
+    background-image: $waves-icon;
     min-height: 80vh;
     background-repeat: no-repeat,no-repeat;
     background-position: 50% 50%;
@@ -343,6 +343,12 @@ p{
         width: 100%
 
     }
+    p{
+        text-align: left;
+        
+
+    }
+    
     .usp11{
         @include usp-float;
         background-color:$primary-color2;
